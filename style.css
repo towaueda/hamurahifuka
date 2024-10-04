@@ -5,6 +5,10 @@ body {
   margin: 0 auto;
 }
 
+p {
+  text-align: center;
+}
+
 header {
   color: #5F5D5D;
   display: flex;
@@ -267,42 +271,145 @@ footer .footer-right {
 .detail-Content {
   position: relative;
   border: 1px solid #335C93;
-}
-.detail-Content-Flg1 { /*三角形左上*/
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-left: 12px solid #335C93;
-  border-bottom: 12px solid transparent;
-}
-.detail-Content-Flg2 { /*三角形右下*/
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  border-left: 12px solid transparent;
-  border-bottom: 12px solid #335C93;
-}
-.detail-Content-Flg3 { /*三角形左下*/
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  border-right: 12px solid transparent;
-  border-bottom: 12px solid #335C93;
-}
-.detail-Content-Flg4 { /*三角形右上*/
-  position: absolute;
-  top: 0;
-  right: 0;
-  border-top: 12px solid #335C93;
-  border-left: 12px solid transparent;
+  background-color: #fff;
 }
 .detail-Content-Title {
   display: flex;
   justify-content: center;
   letter-spacing: 0.14em;
+  background-image: linear-gradient(45deg, #335C93 10px, transparent 0), linear-gradient(-45deg, #335C93 10px, transparent 0), linear-gradient(135deg, #335C93 10px, transparent 0), linear-gradient(-135deg, #335C93 10px, transparent 0);
 }
 .detail-Content-Title p {
   font-size: 14px;
   padding: 5px 9px;
   border-right: 1px solid #335C93;
+}
+.detail-Content-Title span {
+  color: #F68E2F;
+}
+
+.trouble {
+  content: "";
+  display: inline-block;
+  width: auto;
+  height: auto;
+  background-color: #EEE;
+  padding: 40px 15px 30px;
+}
+.trouble-head {
+  color: #5F5D5D;
+  font-size: 18px;
+  content: "";
+  display: inline-block;
+  width: auto;
+  height: auto;
+  background-image: url("/img/trouble-head.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.trouble-head p {
+  text-align: center;
+}
+.trouble-head-ttl {
+  font-size: 24px;
+  background-image: radial-gradient(circle at center, orange 20%, transparent 20%); /* 点の色とサイズ調整 */
+  background-position: top right; /* 点の位置 */
+  background-repeat: repeat-x; /* 横方向に繰り返し */
+  background-size: 1em 0.3em; /* 点の間隔とサイズ調整 */
+  padding-top: 10px;
+}
+.trouble-head-worries {
+  color: #335C93;
+  font-size: 24px;
+}
+.trouble-main {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 12px;
+}
+.trouble-main p {
+  padding: 12px 0;
+  position: relative;
+  padding-left: 40px;
+}
+.trouble-main p::before {
+  content: "";
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  background-image: url("/img/Checkbox.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  top: 30%;
+}
+.trouble-footer {
+  text-align: center;
+  padding-top: 49px;
+}
+
+.solution-top {
+  background-color: #F68E2F;
+  width: 100px;
+  height: 100px;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0 auto;
+}
+.solution-top::before {
+  content: "";
+  border: 5px solid transparent;
+  border-top: 5px solid #F68E2F;
+  margin-left: -5px;
+  top: 100%;
+  left: 50%;
+  position: absolute;
+}
+.solution-top-box {
+  width: 375px;
+  height: auto;
+  background-image: url("/img/Solution.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.solution-top-box-ttl {
+  color: #FFFFFF;
+  font-size: 16px;
+}
+.solution-top-text {
+  color: #5F5D5D;
+  font-size: 28px;
+}
+.solution-top-text span {
+  color: #335C93;
+}
+.solution-box {
+  color: #FFFFFF;
+  font-size: 20px;
+  background-color: #335C93;
+  text-align: center;
+  width: 305px;
+  margin: 0 auto;
+}
+.solution-box-text {
+  background: #5F5D5D;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;
+}
+.solution-box span {
+  font-size: 24px;
+  background: #F68E2F;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;
 }/*# sourceMappingURL=style.css.map */
