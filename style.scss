@@ -1,0 +1,313 @@
+body {
+  font-family: serif;
+  max-width: 375px;
+  margin: 0 auto;
+}
+
+// header
+header {
+  color: #5F5D5D;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 14px 16px;
+  & img {
+    width: auto;
+    height: 100%;
+  }
+  .header-first-text {
+    font-size: 12px;
+  }
+  .header-last-text {
+    font-size: 16px;
+  }
+}
+
+// footer
+footer {
+  display: flex;
+  background-color: #073160;
+  color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 15px 15px 18px;
+  & img {
+    width: 31px;
+    height: 31px;
+  }
+  .footer-left {
+    display: flex;
+  }
+  .footer-first-text {
+    font-size: 12px;
+  }
+  .footer-last-text {
+    font-size: 16px;
+  }
+  .footer-right {
+    width: 78px;
+    font-size: 12px;
+  }
+}
+
+// main
+
+// header-under
+.header-under {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, #1274CE, #335C93);
+  color: #fff;
+  & ::after, ::before {
+    content: "";
+    display: inline-block;
+    width: 13px;
+    height: 20px;
+    background-image: url('/img/head-speech.png');
+    background-position: center;
+    background-size: contain;
+  }
+  & ::before {
+    transform: scaleX(-1);
+  }
+}
+
+// mesogan
+.mesogan {
+  content: "";
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-image: url('/img/mesogan-bg.jpg');
+  background-position: center;
+  background-size: contain;
+  &-left {
+    width: 50%;
+    padding: 20px 10px 40px 10px;
+
+  }
+  &-ttl {
+    color: #5F5D5D;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  &-name {
+    font-weight: bold;
+    font-size: 46px;
+    letter-spacing: -12px;
+    background: linear-gradient(90deg, #1274CE, #335C93);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+  }
+  &-text {
+    &::after, ::before {
+      content: "";
+      display: inline-block;
+      width: 178px;
+      height: 1px;
+      background-image: url('/img/mesogan-border.png');
+      background-position: center;
+      background-size: contain;
+    }
+  }
+  &-right {
+    width: 50%;
+    position: relative;
+    img {
+      position: absolute;
+      width: 333px;
+      height: 283px;
+      right: 0;
+      bottom: -5px;
+    }
+  }
+}
+
+// treatment-area
+.treatment-area {
+  background: linear-gradient(90deg, #1274CE, #335C93);
+  padding: 16px 15px 5px 16px;
+  color: #fff;
+  small {
+    font-size: 10px;
+  }
+}
+.Item {
+  width: 100%;/*お好みで調整*/
+}
+.Item-Content {
+  position: relative;
+  border: 1px solid #fff;
+}
+.Item-Content-Flg1 {/*三角形左上*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 12px solid #fff;
+  border-bottom: 12px solid transparent;
+}
+.Item-Content-Flg2 {/*三角形右下*/
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-left: 12px solid transparent;
+  border-bottom: 12px solid #fff;
+}
+.Item-Content-Flg3 {/*三角形左下*/
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-right: 12px solid transparent;
+  border-bottom: 12px solid #fff;
+}
+.Item-Content-Flg4 {/*三角形右上*/
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-top: 12px solid #fff;
+  border-left: 12px solid transparent;
+}
+.Item-Content-Title {
+  display: flex;
+  justify-content: center;
+  letter-spacing: 0.14em;
+  color: #fff;
+  p {
+    font-size: 12px;
+    padding: 5px 9px;
+    border-right: 1px solid #fff;
+    &:last-child {
+      border-right: none;
+    }
+  }
+}
+
+// campaign
+.campaign {
+  content: "";
+  display: inline-block;
+  width: auto;
+  height: auto;
+  border: 3px solid #925009;
+  background-image: url('/img/campaign-bg.png');
+  background-position: center;
+  background-size: contain;
+  text-align: center;
+  padding: 24px 5px;
+  &-ttl {
+    color: #99A9AC;
+    font-size: 38px;
+    text-align: center;
+  }
+  &-reservation {
+    color: #5F5D5D;
+    position: relative;
+    display: inline-block;
+    padding: 0 30px;
+    margin-bottom: 36px;
+    &::before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      content: "";
+      width: 1px;
+      height: 100%;
+      background: #000;
+      border-radius: 3px;
+      transform: rotate(-25deg);
+      
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      right: 0;
+      top: 0;
+      width: 1px;
+      height: 100%;
+      background: #000;
+      border-radius: 3px;
+      transform: rotate(25deg);
+    }
+  }
+  &-button {
+    background-color: #F68E2F;
+  }
+  &-footer {
+    font-size: 12px;
+    font-weight: bold;
+  }
+}
+
+// detail
+.detail {
+  content: "";
+  display: inline-block;
+  width: auto;
+  height: auto;
+  border: 3px solid #925009;
+  background-image: url('/img/detail-bg.png');
+  background-position: center;
+  background-size: contain;
+  padding: 40px 16px;
+  h2 {
+    color: #335C93;
+    font-size: 24px;
+    text-align: center;
+    position: relative;
+    border-bottom: 1px solid #335C93;
+    margin-bottom: 24px;
+    span {
+      font-size: 16px;
+    }
+    img {
+      position: absolute;
+      left: 52px;
+      top: -20px;
+    }
+  }
+  &-Content {
+    position: relative;
+    border: 1px solid #335C93;
+  }
+  &-Content-Flg1 {/*三角形左上*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-left: 12px solid #335C93;
+    border-bottom: 12px solid transparent;
+  }
+  &-Content-Flg2 {/*三角形右下*/
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-left: 12px solid transparent;
+    border-bottom: 12px solid #335C93;
+  }
+  &-Content-Flg3 {/*三角形左下*/
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid #335C93;
+  }
+  &-Content-Flg4 {/*三角形右上*/
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-top: 12px solid #335C93;
+    border-left: 12px solid transparent;
+  }
+  &-Content-Title {
+    display: flex;
+    justify-content: center;
+    letter-spacing: 0.14em;
+    p {
+      font-size: 14px;
+      padding: 5px 9px;
+      border-right: 1px solid #335C93;
+    }
+  }
+}
