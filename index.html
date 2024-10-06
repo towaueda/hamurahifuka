@@ -30,17 +30,11 @@
       </div>
     </div>
     <div class="treatment-area">
-      <div class="Item">
-        <div class="Item-Content">
-          <div class="Item-Content-Flg1"></div>
-          <div class="Item-Content-Title">
-            <p>毛穴の広がり</p>
-            <p>小じわ</p>
-            <p>肌の凹凸</p>
-            <p>ニキビ</p>
-          </div>
-          <div class="Item-Content-Flg2"></div>
-        </div>
+      <div class="Item-Content-Title">
+        <p>毛穴の広がり</p>
+        <p>小じわ</p>
+        <p>肌の凹凸</p>
+        <p>ニキビ</p>
       </div>
       <small>※一部取り扱っていない事例もございます。</small>
     </div>
@@ -48,9 +42,10 @@
       <p class="campaign-ttl">CAMPAIGN</p>
       <img src="./img/campaign.png" alt="">
       <img src="./img/campaign-discount.png" alt="">
+      <!-- <p class="campaign-discount">最大<span>8万</span>円割引</p> -->
       <p class="campaign-reservation">WEBで簡単3分予約</p>
       <a class="campaign-button" href="#">
-        <p>無料カウンセリングをいますぐ予約する</p>
+        <p>無料カウンセリングを<br>いますぐ予約する</p>
       </a>
       <p class="campaign-footer">
         ※体質に合うかしっかり診察してから施術を行います。<br>
@@ -75,12 +70,14 @@
       <div class="trouble-head">
         <p><span class="trouble-head-ttl">肌トラブル</span>で<br>こんな<span class="trouble-head-worries">お悩み</span>はありませんか？</p>
       </div>
-      <div class="trouble-main">
-        <p><span>毛穴の開き</span>が目立って明るく見えない</p>
-        <p><span>シワやたるみ</span>が気になって老けて見えてしまう</p>
-        <p><span>ニキビ肌やクレーター肌</span>のせいで汚く見える</p>
-        <p><span>肌をキレイにしたい</span>けど色々やるのはめんどくさい</p>
-        <p>肌治療は<span>ダウンタイムが長い</span>からやりたくない</p>
+      <div class="trouble-wrapper">
+        <div class="trouble-main">
+          <p><span>毛穴の開き</span>が目立って明るく見えない</p>
+          <p><span>シワやたるみ</span>が気になって老けて見えてしまう</p>
+          <p><span>ニキビ肌やクレーター肌</span>のせいで汚く見える</p>
+          <p><span>肌をキレイにしたい</span>けど色々やるのはめんどくさい</p>
+          <p>肌治療は<span>ダウンタイムが長い</span>からやりたくない</p>
+        </div>
       </div>
       <img src="./img/trouble-human.png" alt="">
       <p class="trouble-footer">そんなあなただから<br>おすすめできる</p>
@@ -257,7 +254,7 @@
     </div>
     <div class="mechanism">
       <h3>メソガンのメカニズム</h3>
-      <di class="mechanism-box">
+      <div class="mechanism-box">
         <input id="block-01" type="checkbox" class="toggle">
         <label class="Label" for="block-01">その01</label>
         <div class="content">
@@ -280,24 +277,29 @@
       </div>
     </div>
     <div class="qa">
-      <p class="qa-kogo">Q&A</p>
-      <h3 class="qa-ttl">よくあるご質問</h3>
+      <div class="qa-top">
+        <p class="qa-logo">Q<span>&</span>A</p>
+        <h3 class="qa-ttl">よくあるご質問</h3>
+      </div>
       <div class="qa-box">
-        <input id="block-01" type="checkbox" class="toggle">
-        <label class="Label" for="block-01">施術中の痛みはありますか？</label>
+        <input id="qa-block-01" type="checkbox" class="toggle">
+        <label class="Label" for="qa-block-01">
+          <p>Q</p>
+          施術中の痛みはありますか？
+        </label>
         <div class="content">
           <p>
             施術中の痛みは殆どありません。あったとしても少しチクチクする程度なので麻酔を必要としないくらいです。もし心配な場合は麻酔の仕様も可能です。
           </p>
         </div>
-        <input id="block-02" type="checkbox" class="toggle">
-        <label class="Label" for="block-02">その02</label>
+        <input id="qa-block-02" type="checkbox" class="toggle">
+        <label class="Label" for="qa-block-02">その02</label>
         <div class="content">
           <p>【坊ちゃんの内容が表示します。】<br>
           </p>
         </div>
-        <input id="block-03" type="checkbox" class="toggle">
-        <label class="Label" for="block-03">その03</label>
+        <input id="qa-block-03" type="checkbox" class="toggle">
+        <label class="Label" for="qa-block-03">その03</label>
         <div class="content">
           <p>【徒然草の内容が表示します。】<br>
           </p>
