@@ -252,17 +252,28 @@ footer {
 
 // detail
 .detail {
+  text-align: center;
   background-image: url('/img/detail-bg.png');
   background-position: center;
   background-size: contain;
   padding: 40px 16px;
   h2 {
+    display: inline-block;
     color: #335C93;
     font-size: 24px;
     text-align: center;
     position: relative;
     border-bottom: 1px solid #335C93;
     margin-bottom: 24px;
+    &::after {
+      content: '';
+      border-left: 12px solid transparent;
+      border-right: 12px solid transparent;
+      border-top: 12px solid #335C93;
+      position: absolute;
+      bottom: -12px;
+      left: 40%;
+    }
     span {
       font-size: 16px;
     }
@@ -393,20 +404,28 @@ footer {
       left: 50%;
       position: absolute;
     }
+    &::after {
+      
+    }
 
     &-box {
-      width: 375px;
-      height: auto;
       background-image: url('/img/Solution.png');
       background-position: center;
       background-size: contain;
       background-repeat: no-repeat;
+      background-size: 375px;
       &::before {
-
+        content: "";
+        /* width: 100%; */
+        border-left: 187px solid transparent;
+        border-right: 187px solid transparent;
+        border-top: 70px solid #EEEEEE;
+        position: absolute;
       }
       &-ttl {
         color: #FFFFFF;
         font-size: 16px;
+        text-align: center;
       }
     }
     &-text {
@@ -496,6 +515,7 @@ footer {
     }
     &-ttl {
       color: #5F5D5D;
+      text-align: center;
       font-size: 20px;
       font-weight: bold;
     }
@@ -541,6 +561,7 @@ footer {
     }
     &-ttl {
       font-size: 21px;
+      text-align: center;
       color: #5F5D5D;
       span {
         font-size: 28px;
@@ -718,6 +739,7 @@ footer {
   background-color: #F2EDE7;
   position: relative;
   margin-top: 82px;
+  padding-bottom: 52px;
   &-top {
     width: 151px;
     height: 141px;
@@ -728,6 +750,9 @@ footer {
     top: -58px;
     left: 29%;
     z-index: 1;
+    p {
+      text-align: center;
+    }
   }
   &-step {
     display: flex;
@@ -804,6 +829,7 @@ footer {
   background-image: url('/img/details.png');
   background-size: contain;
   background-repeat: no-repeat;
+  background-size: 375px;
   padding: 38px 0;
   h3 {
     text-align: center;
@@ -868,7 +894,7 @@ footer {
   table {
     width: 100%;
     color: #5F5D5D;
-    margin: 16px 0 16px 16px;
+    margin: 16px 0 16px 10px;
     th {
       padding: 16px 0;
       // border-top: 1px solid #5F5D5D;
@@ -880,6 +906,8 @@ footer {
   }
   &-first {
     width: 82px;
+    font-weight: bold;
+    padding-right: 18px !important;
   }
 }
 
@@ -951,8 +979,9 @@ footer {
     padding:0 20px;
     overflow: hidden;
     background-image: linear-gradient(-45deg, #335C93 10px, transparent 0);
-    filter: drop-shadow(2px 2px 2px #4e4e4e);
-    border-top: 1px solid;
+    // filter: drop-shadow(2px 2px 2px #4e4e4e);
+    border: 1px solid #4e4e4e;
+    border-top: none;
   }
   .toggle:checked + .Label + .content {	/*開閉時*/
     height: auto;
@@ -989,6 +1018,7 @@ footer {
   &-logo {
     color: #fff;
     font-size: 40px;
+    text-align: center;
     padding-top: 14px;
     span {
       font-size: 22px;
@@ -1008,23 +1038,23 @@ footer {
   }
   .Label {
     padding: 1em;
-    display: block;
+    display: flex;
     color: #335C93;
     background:#fff;
     filter: drop-shadow(1px 1px 1px #4e4e4e);
-    &::before, ::after{		/*タイトル横の矢印*/
+    &::before,&::after{
       content:"";
-      width: 6px;
+      width: 15px;
       height: 6px;
       border-top: 2px solid #335C93;
-      -webkit-transform: rotate(45deg);
       position: absolute;
-      top:calc( 50% - 3px );
+      top: 47%;
       right: 20px;
     }
     &::after {
-      transform: rotate(135deg);
-
+      transform: rotate(90deg);
+      right: 23px;
+      top: 42%;
     }
     &::before {
 
@@ -1053,7 +1083,10 @@ footer {
     padding:20px ;
     transition: all .3s;
   }
+  .toggle:checked + .Label::after {
+    transform: rotate(0deg) !important;
+  }
   .toggle:checked + .Label::before {
-    transform: rotate(-45deg) !important;
+    border-top: none;
   }
 }

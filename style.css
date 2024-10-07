@@ -236,18 +236,29 @@ footer .footer-right {
 }
 
 .detail {
+  text-align: center;
   background-image: url("/img/detail-bg.png");
   background-position: center;
   background-size: contain;
   padding: 40px 16px;
 }
 .detail h2 {
+  display: inline-block;
   color: #335C93;
   font-size: 24px;
   text-align: center;
   position: relative;
   border-bottom: 1px solid #335C93;
   margin-bottom: 24px;
+}
+.detail h2::after {
+  content: "";
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 12px solid #335C93;
+  position: absolute;
+  bottom: -12px;
+  left: 40%;
 }
 .detail h2 span {
   font-size: 16px;
@@ -370,16 +381,24 @@ footer .footer-right {
   position: absolute;
 }
 .solution-top-box {
-  width: 375px;
-  height: auto;
   background-image: url("/img/Solution.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+  background-size: 375px;
+}
+.solution-top-box::before {
+  content: "";
+  /* width: 100%; */
+  border-left: 187px solid transparent;
+  border-right: 187px solid transparent;
+  border-top: 70px solid #EEEEEE;
+  position: absolute;
 }
 .solution-top-box-ttl {
   color: #FFFFFF;
   font-size: 16px;
+  text-align: center;
 }
 .solution-top-text {
   color: #5F5D5D;
@@ -457,6 +476,7 @@ footer .footer-right {
 }
 .solution-approve-ttl {
   color: #5F5D5D;
+  text-align: center;
   font-size: 20px;
   font-weight: bold;
 }
@@ -500,6 +520,7 @@ footer .footer-right {
 }
 .compare-top-ttl {
   font-size: 21px;
+  text-align: center;
   color: #5F5D5D;
 }
 .compare-top-ttl span {
@@ -670,6 +691,7 @@ footer .footer-right {
   background-color: #F2EDE7;
   position: relative;
   margin-top: 82px;
+  padding-bottom: 52px;
 }
 .flow-top {
   width: 151px;
@@ -681,6 +703,9 @@ footer .footer-right {
   top: -58px;
   left: 29%;
   z-index: 1;
+}
+.flow-top p {
+  text-align: center;
 }
 .flow-step {
   display: flex;
@@ -753,6 +778,7 @@ footer .footer-right {
   background-image: url("/img/details.png");
   background-size: contain;
   background-repeat: no-repeat;
+  background-size: 375px;
   padding: 38px 0;
 }
 .details h3 {
@@ -817,7 +843,7 @@ footer .footer-right {
 .access table {
   width: 100%;
   color: #5F5D5D;
-  margin: 16px 0 16px 16px;
+  margin: 16px 0 16px 10px;
 }
 .access table th {
   padding: 16px 0;
@@ -827,6 +853,8 @@ footer .footer-right {
 }
 .access-first {
   width: 82px;
+  font-weight: bold;
+  padding-right: 18px !important;
 }
 
 .mechanism {
@@ -895,8 +923,8 @@ footer .footer-right {
   padding: 0 20px;
   overflow: hidden;
   background-image: linear-gradient(-45deg, #335C93 10px, transparent 0);
-  filter: drop-shadow(2px 2px 2px #4e4e4e);
-  border-top: 1px solid;
+  border: 1px solid #4e4e4e;
+  border-top: none;
 }
 .mechanism .toggle:checked + .Label + .content { /*開閉時*/
   height: auto;
@@ -930,6 +958,7 @@ footer .footer-right {
 .qa-logo {
   color: #fff;
   font-size: 40px;
+  text-align: center;
   padding-top: 14px;
 }
 .qa-logo span {
@@ -949,23 +978,24 @@ footer .footer-right {
 }
 .qa .Label {
   padding: 1em;
-  display: block;
+  display: flex;
   color: #335C93;
   background: #fff;
   filter: drop-shadow(1px 1px 1px #4e4e4e);
 }
-.qa .Label::before, .qa .Label ::after { /*タイトル横の矢印*/
+.qa .Label::before, .qa .Label::after {
   content: "";
-  width: 6px;
+  width: 15px;
   height: 6px;
   border-top: 2px solid #335C93;
-  -webkit-transform: rotate(45deg);
   position: absolute;
-  top: calc(50% - 3px);
+  top: 47%;
   right: 20px;
 }
 .qa .Label::after {
-  transform: rotate(135deg);
+  transform: rotate(90deg);
+  right: 23px;
+  top: 42%;
 }
 .qa .Label,
 .qa .content {
@@ -986,6 +1016,9 @@ footer .footer-right {
   padding: 20px;
   transition: all 0.3s;
 }
+.qa .toggle:checked + .Label::after {
+  transform: rotate(0deg) !important;
+}
 .qa .toggle:checked + .Label::before {
-  transform: rotate(-45deg) !important;
+  border-top: none;
 }/*# sourceMappingURL=style.css.map */
