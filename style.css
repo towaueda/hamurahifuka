@@ -466,6 +466,9 @@ footer .footer-right {
   top: 13vw;
   right: -3.2vw;
 }
+.solution-approve-box {
+  padding: 30px 0;
+}
 .solution-approve-01::after {
   background-image: url("/img/solution-detail.png");
 }
