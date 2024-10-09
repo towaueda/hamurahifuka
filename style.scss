@@ -226,7 +226,7 @@ footer {
       position: relative;
       box-shadow: 0px 0px 0px 6px #F68E2F;
       border: solid 1px white;
-      width: 325px;
+      width: 340px;
       margin: 13px auto 24px;
       &::after {
         content: "";
@@ -261,6 +261,7 @@ footer {
     display: inline-block;
     color: #335C93;
     font-size: 24px;
+    font-weight: bold;
     text-align: center;
     position: relative;
     border-bottom: 1px solid #335C93;
@@ -431,6 +432,8 @@ footer {
     &-text {
       color: #5F5D5D;
       font-size: 28px;
+      text-align: center;
+      font-weight: bold;
       span {
         color: #335C93;
       }
@@ -479,6 +482,9 @@ footer {
       position: absolute;
       top: 50px;
       right: -12px;
+    }
+    &-box {
+      padding: 30px 0;
     }
     &-01 {
       &::after {
