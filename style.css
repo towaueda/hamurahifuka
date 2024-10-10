@@ -1,11 +1,12 @@
 @charset "UTF-8";
 body {
   font-family: serif;
-  max-width: 375px;
+  max-width: px;
   margin: 0 auto;
 }
 
 header {
+  max-width: 750px;
   color: #5F5D5D;
   display: flex;
   justify-content: flex-start;
@@ -23,8 +24,21 @@ header .header-last-text {
   font-size: 16px;
   font-weight: bolder;
 }
+@media screen and (min-width: 429px) {
+  header img {
+    width: 62px;
+    height: auto;
+  }
+  header .header-first-text {
+    font-size: 24px;
+  }
+  header .header-last-text {
+    font-size: 32px;
+  }
+}
 
 footer {
+  max-width: 750px;
   display: flex;
   background-color: #073160;
   color: #fff;
@@ -38,6 +52,7 @@ footer img {
 }
 footer .footer-left {
   display: flex;
+  align-items: center;
 }
 footer .footer-first-text {
   font-size: 12px;
@@ -48,6 +63,28 @@ footer .footer-last-text {
 footer .footer-right {
   width: 78px;
   font-size: 12px;
+}
+@media screen and (min-width: 429px) {
+  footer img {
+    width: 62px;
+    height: auto;
+  }
+  footer .footer-first-text {
+    font-size: 24px;
+  }
+  footer .footer-last-text {
+    font-size: 32px;
+  }
+  footer .footer-right {
+    width: 25%;
+    font-size: 24px;
+  }
+}
+
+main {
+  max-width: 750px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .header-under {
@@ -81,6 +118,22 @@ footer .footer-right {
 .header-under ::after {
   right: -14px;
 }
+@media screen and (min-width: 429px) {
+  .header-under p {
+    font-size: 32px;
+  }
+  .header-under ::after, .header-under ::before {
+    width: 3.4vw;
+    height: 5.6vw;
+    bottom: 1.4vw;
+  }
+  .header-under ::before {
+    left: -1.8vw;
+  }
+  .header-under ::after {
+    right: -1.8vw;
+  }
+}
 
 .mesogan {
   content: "";
@@ -90,7 +143,7 @@ footer .footer-right {
   background-image: url("/img/mesogan-bg.jpg");
   background-position: center;
   background-size: contain;
-  background-size: 375px;
+  background-size: 750px;
 }
 .mesogan-left {
   width: 50%;
@@ -130,7 +183,36 @@ footer .footer-right {
   width: 333px;
   height: 283px;
   right: 0;
-  bottom: -5px;
+  bottom: 0;
+}
+@media screen and (min-width: 429px) {
+  .mesogan-left {
+    padding: 42px 0 82px 16px;
+  }
+  .mesogan-ttl {
+    font-size: 56px;
+  }
+  .mesogan-name {
+    font-size: 92px;
+    padding-bottom: 12px;
+  }
+  .mesogan-text {
+    font-size: 32px;
+  }
+  .mesogan-text::after, .mesogan-text ::before {
+    width: 356px;
+    height: 1px;
+  }
+  .mesogan-right {
+    width: 50%;
+  }
+  .mesogan-right img {
+    position: absolute;
+    width: 666px;
+    height: auto;
+    right: 0;
+    bottom: 0;
+  }
 }
 
 .treatment-area {
@@ -141,6 +223,11 @@ footer .footer-right {
 .treatment-area small {
   font-size: 10px;
   font-weight: bold;
+}
+@media screen and (min-width: 429px) {
+  .treatment-area small {
+    font-size: 20px;
+  }
 }
 
 .Item-Content-Title {
@@ -158,6 +245,12 @@ footer .footer-right {
 }
 .Item-Content-Title p:last-child {
   border-right: none;
+}
+@media screen and (min-width: 429px) {
+  .Item-Content-Title p {
+    font-size: 24px;
+    padding: 18px 24px;
+  }
 }
 
 .campaign {
@@ -265,7 +358,7 @@ footer .footer-right {
 }
 .detail h2 img {
   position: absolute;
-  left: 52px;
+  left: -24px;
   top: -20px;
 }
 .detail-Content {
@@ -282,9 +375,10 @@ footer .footer-right {
 }
 .detail-Content-Title p {
   font-size: 14px;
+  font-weight: bold;
   padding: 16px;
 }
-.detail-Content-Title span {
+.detail-Content-Title p span {
   color: #F68E2F;
 }
 
@@ -308,6 +402,7 @@ footer .footer-right {
 }
 .trouble-head-ttl {
   font-size: 24px;
+  font-weight: bold;
   background-image: radial-gradient(circle at center, orange 20%, transparent 20%);
   background-position: top right;
   background-repeat: repeat-x;
@@ -317,6 +412,7 @@ footer .footer-right {
 .trouble-head-worries {
   color: #335C93;
   font-size: 24px;
+  font-weight: bold;
 }
 .trouble-wrapper {
   content: "";
@@ -334,11 +430,13 @@ footer .footer-right {
 }
 .trouble-main p {
   text-align: left;
+  font-weight: bold;
   padding: 12px 0;
   position: relative;
   padding-left: 40px;
 }
 .trouble-main p span {
+  font-weight: bold;
   color: #F68E2F;
 }
 .trouble-main p::before {
@@ -355,6 +453,7 @@ footer .footer-right {
   top: 30%;
 }
 .trouble-footer {
+  font-weight: bold;
   text-align: center;
   padding-top: 49px;
 }
@@ -403,6 +502,9 @@ footer .footer-right {
 .solution-top-text {
   color: #5F5D5D;
   font-size: 28px;
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 32px;
 }
 .solution-top-text span {
   color: #335C93;
@@ -411,14 +513,25 @@ footer .footer-right {
   padding: 0.2em 0.5em;
   width: 300px;
   margin: 2em auto;
-  background: #335C93;
+  background: linear-gradient(90deg, #1274CE, #335C93);
   box-shadow: 0px 0px 0px 10px #335C93;
   border: solid 2px white;
 }
 .solution-box-ttl {
   color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.solution-box-ttl::after, .solution-box-ttl::before {
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 1px;
+  background-color: #fff;
 }
 .solution-box-text {
+  text-align: center;
   background: #5F5D5D;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -450,6 +563,9 @@ footer .footer-right {
   position: absolute;
   top: 50px;
   right: -12px;
+}
+.solution-approve-box {
+  padding-bottom: 36px;
 }
 .solution-approve-01::after {
   background-image: url("/img/solution-detail.png");
@@ -509,6 +625,7 @@ footer .footer-right {
   bottom: -90px;
 }
 .compare-top p {
+  text-align: center;
   font-weight: bold;
 }
 .compare-top-bubble {
@@ -546,12 +663,15 @@ footer .footer-right {
 .price-top p {
   text-align: left;
   font-size: 16px;
+  font-weight: 600;
 }
 .price-box {
   text-align: center;
-  padding: 0 12px;
+  padding: 0 12px 32px;
 }
 .price-box h3 {
+  font-size: 20px;
+  font-weight: 900;
   text-align: center;
   position: relative;
   padding: 19px 0 13px;
@@ -566,8 +686,8 @@ footer .footer-right {
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
-  left: 27%;
-  top: 9px;
+  left: 26%;
+  top: 11px;
 }
 .price-box01 {
   display: flex;
@@ -588,8 +708,9 @@ footer .footer-right {
 }
 .price-box-1time {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
+  margin-bottom: 8px;
 }
 .price-box-1time-text {
   padding: 0 9px;
@@ -645,6 +766,7 @@ footer .footer-right {
 .price-limited-time {
   width: 88px;
   font-size: 15px;
+  text-align: center;
   margin: 0 2%;
   display: inline-block;
   border: 1px solid #335C93;
@@ -654,6 +776,7 @@ footer .footer-right {
 .price-special-offer {
   width: 88px;
   font-size: 15px;
+  text-align: center;
   margin: 0 2%;
   display: inline-block;
   color: #fff;
@@ -673,15 +796,17 @@ footer .footer-right {
   font-weight: bold;
   color: #5F5D5D;
   padding-top: 8px;
+  padding-bottom: 32px;
 }
 .why-mesogan img {
-  padding: 24px 0;
+  padding: 0;
 }
 .why-mesogan p {
   font-size: 16px;
   font-weight: bold;
   text-align: left;
   color: #5F5D5D;
+  padding-top: 24px;
 }
 .why-mesogan p span {
   color: #335C93;
@@ -815,7 +940,7 @@ footer .footer-right {
 }
 
 .access {
-  padding: 0 14px;
+  padding: 40px 14px;
 }
 .access h3 {
   text-align: center;
@@ -838,12 +963,17 @@ footer .footer-right {
 }
 .access-text {
   color: #5F5D5D;
+  font-size: 16px;
+  font-weight: bold;
   padding: 12px 0 12px 10px;
 }
 .access table {
   width: 100%;
   color: #5F5D5D;
   margin: 16px 0 16px 10px;
+}
+.access table tr {
+  border-bottom: 1px solid #B5B5B5;
 }
 .access table th {
   padding: 16px 0;
@@ -860,7 +990,7 @@ footer .footer-right {
 .mechanism {
   background-image: url("/img/mechanism-bg.png");
   background-size: contain;
-  padding-top: 56px;
+  padding: 56px 15px;
   background-position: top;
   background-repeat: no-repeat;
   background-size: 375px;
@@ -959,7 +1089,6 @@ footer .footer-right {
   color: #fff;
   font-size: 40px;
   text-align: center;
-  padding-top: 14px;
 }
 .qa-logo span {
   font-size: 22px;
@@ -977,8 +1106,10 @@ footer .footer-right {
   display: none;
 }
 .qa .Label {
+  font-size: 16px;
   padding: 1em;
   display: flex;
+  align-items: center;
   color: #335C93;
   background: #fff;
   filter: drop-shadow(1px 1px 1px #4e4e4e);
@@ -997,13 +1128,25 @@ footer .footer-right {
   right: 23px;
   top: 42%;
 }
+.qa .Label p {
+  background-color: #335C93;
+  color: #fff;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  vertical-align: middle;
+  margin-right: 12px;
+}
 .qa .Label,
 .qa .content {
   backface-visibility: hidden;
   transform: translateZ(0);
   transition: all 0.3s;
 }
-.qa .content { /*本文*/
+.qa .content {
+  display: flex;
+  align-items: center;
   height: 0;
   background-color: #fff;
   margin-bottom: 10px;
@@ -1011,9 +1154,21 @@ footer .footer-right {
   overflow: hidden;
   filter: drop-shadow(2px 2px 2px #4e4e4e);
 }
+.qa .content p {
+  font-size: 16px;
+}
+.qa-A {
+  width: 36px;
+  height: 36px;
+  padding: 0 13px;
+  border-radius: 50px;
+  background-color: #335C93;
+  color: #fff;
+  margin-right: 12px;
+}
 .qa .toggle:checked + .Label + .content { /*開閉時*/
   height: auto;
-  padding: 20px;
+  padding: 16px;
   transition: all 0.3s;
 }
 .qa .toggle:checked + .Label::after {
