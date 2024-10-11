@@ -264,6 +264,11 @@ main {
   }
   @media screen and (min-width: 429px) {
     small {
+      font-size: 2.6vw;
+    }
+  }
+  @media screen and (min-width: 750px) {
+    small {
       font-size: 20px;
     }
   }
@@ -285,11 +290,18 @@ main {
     }
   }
   @media screen and (min-width: 429px) {
+    background-image: linear-gradient(-45deg, #fff 3.3vw, transparent 0), linear-gradient(135deg, #fff 3.3vw, transparent 0);
+    p {
+      font-size: 3.2vw;
+      padding: 2.4vw 3.2vw;
+    }
+  }
+  @media screen and (min-width: 750px) {
+    background-image: linear-gradient(-45deg, #fff 12px, transparent 0), linear-gradient(135deg, #fff 12px, transparent 0);
     p {
       font-size: 24px;
       padding: 18px 24px;
     }
-  
   }
 }
 
@@ -310,9 +322,6 @@ main {
     font-size: 38px;
     text-align: center;
   }
-  // &-discount {
-  //   color: #925009;
-  // }
   &-reservation {
     color: #5F5D5D;
     position: relative;
@@ -369,6 +378,60 @@ main {
     font-size: 12px;
     font-weight: bold;
     color: #5F5D5D;
+  }
+  @media screen and (min-width: 429px) {
+    padding: 6.4vw 1.6vw;
+    &-ttl {
+      font-size: 10vw;
+    }
+    &-reservation {
+      font-size: 4.8vw;
+      padding: 0 2.6vw;
+    }
+    &-button {
+      p {
+        font-size: 5.3vw;
+        width: 86vw;
+        border-radius: 13vw;
+        margin: 3.4vw auto 6.4;
+        &::after {
+          width: 8vw;
+          height: 8vw;
+          right: 7.4vw;
+          top: 30%;
+        }
+      }
+    }
+    &-footer {
+      font-size: 3.2vw;
+    }
+  }
+  @media screen and (min-width: 750px) {
+    padding: 48px 12px;
+    &-ttl {
+      font-size: 76px;
+    }
+    &-reservation {
+      font-size: 36px;
+      padding: 0 20px;
+    }
+    &-button {
+      p {
+        font-size: 40px;
+        width: 650px;
+        border-radius: 100px;
+        margin: 26px auto 48px;
+        &::after {
+          width: 60px;
+          height: 60px;
+          right: 56px;
+          top: 30%;
+        }
+      }
+    }
+    &-footer {
+      font-size: 24px;
+    }
   }
 }
 
@@ -466,8 +529,85 @@ main {
       }
     }
   }
+  @media screen and (min-width: 429px) {
+    padding: 10vw 4.2vw;
+    h2 {
+      font-size: 6.4vw;
+      margin-bottom: 6.4vw;
+      &::after {
+        width: 100%;
+        height: 8vw;
+        bottom: -5.3vw;
+        left: 0;
+      }
+      span {
+        font-size: 4.2vw;
+      }
+      img {
+        left: -6.4vw;
+        top: -5.3vw;
+      }
+    }
+    &-Content {
+      border: 2px solid #335C93;
+      box-shadow: 0px 0px 0px 8px #fff;
+      &::after,&::before {
+        width: 6.9vw;
+        height: 6.9vw;
+      }
+    }
+    &-Content-Title {
+      letter-spacing: 0.14em;
+      &::after,&::before {
+        width: 6.9vw;
+        height: 6.9vw;
+      }
+    p {
+        font-size: 3.7vw;
+        padding: 4.2vw;
+      }
+    }
+  }
+  @media screen and (min-width: 750px) {
+    padding: 80px 32px;
+    h2 {
+      font-size: 48px;
+      margin-bottom: 48px;
+      &::after {
+        width: 100%;
+        height: 60px;
+        bottom: -40px;
+        left: 0;
+      }
+      span {
+        font-size: 32px;
+      }
+      img {
+        left: -48px;
+        top: -40px;
+      }
+    }
+    &-Content {
+      border: 2px solid #335C93;
+      box-shadow: 0px 0px 0px 8px #fff;
+      &::after,&::before {
+        width: 52px;
+        height: 52px;
+      }
+    }
+    &-Content-Title {
+      letter-spacing: 0.14em;
+      &::after,&::before {
+        width: 52px;
+        height: 52px;
+      }
+    p {
+        font-size: 28px;
+        padding: 32px;
+      }
+    }
+  }
 }
-
 // trouble
 .trouble {
   text-align: center;
@@ -570,6 +710,11 @@ main {
     text-align: center;
     padding-top: 49px;
   }
+  @media screen and (min-width: 429px) {
+  }
+  @media screen and (min-width: 750px) {
+  }
+
 }
 
 // Solution
@@ -741,6 +886,11 @@ main {
       font-size: 15px;
     }
   }
+  @media screen and (min-width: 429px) {
+  }
+  @media screen and (min-width: 750px) {
+  }
+
 }
 
 // compare
@@ -790,6 +940,11 @@ main {
       }
     }
   }
+  @media screen and (min-width: 429px) {
+  }
+  @media screen and (min-width: 750px) {
+  }
+
 }
 
 // price
@@ -932,6 +1087,11 @@ main {
     background: linear-gradient(90deg, #1274CE, #335C93);
     transform:skewX(150deg);
   }
+  @media screen and (min-width: 429px) {
+  }
+  @media screen and (min-width: 750px) {
+  }
+
 }
 
 // why-mesogan
@@ -960,6 +1120,11 @@ main {
       color: #335C93;
     }
   }
+  @media screen and (min-width: 429px) {
+  }
+  @media screen and (min-width: 750px) {
+  }
+
 }
 
 // flow
@@ -1070,6 +1235,11 @@ main {
       text-align: left;
     }
   }
+  @media screen and (min-width: 429px) {
+  }
+  @media screen and (min-width: 750px) {
+  }
+
 }
 
 // details
@@ -1173,6 +1343,11 @@ main {
   &-content-text {
     padding-left: 27px;
   }
+  @media screen and (min-width: 429px) {
+  }
+  @media screen and (min-width: 750px) {
+  }
+
 }
 
 // access
@@ -1221,6 +1396,11 @@ main {
     font-weight: bold;
     padding-right: 18px !important;
   }
+  @media screen and (min-width: 429px) {
+  }
+  @media screen and (min-width: 750px) {
+  }
+
 }
 
 // mechanism
@@ -1303,6 +1483,11 @@ main {
   .toggle:checked + .Label::before {
     transform: rotate(-45deg) !important;
   }
+  @media screen and (min-width: 429px) {
+  }
+  @media screen and (min-width: 750px) {
+  }
+
 }
 
 // qa
@@ -1428,4 +1613,9 @@ main {
   .toggle:checked + .Label::before {
     border-top: none;
   }
+  @media screen and (min-width: 429px) {
+  }
+  @media screen and (min-width: 750px) {
+  }
+
 }
