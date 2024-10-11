@@ -383,6 +383,12 @@ main {
   }
   @media screen and (min-width: 429px) {
     padding: 6.4vw 1.6vw;
+    &-top-img {
+      width: 92vw;
+    }
+    &-discount {
+      width: 75vw;
+    }
     &-ttl {
       font-size: 10vw;
     }
@@ -410,6 +416,12 @@ main {
   }
   @media screen and (min-width: 750px) {
     padding: 48px 12px;
+    &-top-img {
+      width: 690px;
+    }
+    &-discount {
+      width: 568px;
+    }
     &-ttl {
       font-size: 76px;
     }
@@ -754,6 +766,9 @@ main {
         top: 30%;
       }
     }
+    &-img {
+      width: 75vw;
+    }
     &-footer {
       font-size: 4.2vw;
       padding-top: 13vw;
@@ -798,6 +813,9 @@ main {
         height: 56px;
         top: 30%;
       }
+    }
+    &-img {
+      width: 566px;
     }
     &-footer {
       font-style: 32px;
@@ -1003,20 +1021,11 @@ main {
       margin: 5.3vw 0 6.4vw;
       &::after {
         width: 37vw;
-        height: 39.2vw;
-        right: -3vw;
+        height: 39.2;
         top: -18vw;
       }
-      &-ttl {
-        &::after,&::before {
-          width: 10vw;
-          height: 0.2vw;
-        }
-      }
-      &-text {
-        span {
-          font-size: 6.4vw;
-        }
+      &-img {
+        width: 81vw;
       }
     }
     &-approve {
@@ -1035,6 +1044,7 @@ main {
         font-size: 9.6vw;
       }
       img {
+        width: 92vw;
         padding: 4.2vw 0;
       }
       &-ttl {
@@ -1074,19 +1084,10 @@ main {
       &::after {
         width: 284px;
         height: 294px;
-        right: -22px;
         top: -140px;
       }
-      &-ttl {
-        &::after,&::before {
-          width: 80px;
-          height: 2px;
-        }
-      }
-      &-text {
-        span {
-          font-size: 48px;
-        }
+      &-img {
+        width: 610px;
       }
     }
     &-approve {
@@ -1105,6 +1106,7 @@ main {
         font-size: 72px;
       }
       img {
+        width: 690px;
         padding: 32px 0;
       }
       &-ttl {
@@ -1185,6 +1187,9 @@ main {
         }
       }
     }
+    &-img {
+      width: 100vw;
+    }
   }
   @media screen and (min-width: 750px) {
     width: 750px;
@@ -1206,6 +1211,9 @@ main {
           font-size: 56px;
         }
       }
+    }
+    &-img {
+      width: 750px;
     }
   }
 }
@@ -1353,6 +1361,9 @@ main {
   @media screen and (min-width: 429px) {
     &-top {
       padding: 8.5vw 30px;
+      &-img {
+        width: 27vw;
+      }
       h2 {
         font-size: 56px;
         padding: 2.1vw 0 6.4vw;
@@ -1363,6 +1374,9 @@ main {
     }
     &-box {
       padding: 0 3.2vw 8.5vw;
+      &-img {
+        width: 92vw;
+      }
       h3 {
         font-size: 5.3vw;
         padding: 5vw 0 3.4vw;
@@ -1438,6 +1452,9 @@ main {
   @media screen and (min-width: 750px) {
     &-top {
       padding: 64px 30px;
+      &-img {
+        width: 208px;
+      }
       h2 {
         font-size: 56px;
         padding: 16px 0 48px;
@@ -1448,6 +1465,9 @@ main {
     }
     &-box {
       padding: 0 24px 64px;
+      &-img {
+        width: 690px;
+      }
       h3 {
         font-size: 40px;
         padding: 38px 0 26px;
@@ -1550,6 +1570,12 @@ main {
   }
   @media screen and (min-width: 429px) {
     padding: 8.5vw 3.7vw;
+    &-img01 {
+      width: 66.8vw;
+    }
+    &-img02 {
+      width: 92vw;
+    }
     h3 {
       font-size: 6.4vw;
       padding-top: 2vw;
@@ -1562,6 +1588,12 @@ main {
   }
   @media screen and (min-width: 750px) {
     padding: 64px 28px;
+    &-img01 {
+      width: 501px;
+    }
+    &-img02 {
+      width: 690px;
+    }
     h3 {
       font-size: 48px;
       padding-top: 16px;
@@ -1695,6 +1727,9 @@ main {
       width: 40vw;
       height: 37.6vw;
       top: -15.4vw;
+      &-img {
+        width: 32vw;
+      }
     }
     &-step {
       &::before {
@@ -1736,7 +1771,7 @@ main {
       }
     }
     p {
-      font-size: 4.2vw;
+      font-size: 5.8vw;
     }
   }
   @media screen and (min-width: 750px) {
@@ -1746,6 +1781,9 @@ main {
       width: 302px;
       height: 282px;
       top: -116px;
+      &-img {
+        width: 240px;
+      }
       p {
         font-size: 48px;
       }
@@ -1790,7 +1828,7 @@ main {
       }
     }
     p {
-      font-size: 32px;
+      font-size: 44px;
     }
   }
 }
@@ -1996,6 +2034,9 @@ main {
   }
   @media screen and (min-width: 429px) {
     padding: 10vw 3.7vw;
+    &-img {
+      width: 92vw;
+    }
     h3 {
       font-size: 6.4vw;
     }
@@ -2025,9 +2066,15 @@ main {
       width: 21.8vw;
       padding-right: 4.8vw !important;
     }
+    small {
+      font-size: 2.6vw;
+    }
   }
   @media screen and (min-width: 750px) {
     padding: 80px 28px;
+    &-img {
+      width: 690px;
+    }
     h3 {
       font-size: 48px;
     }
@@ -2057,8 +2104,10 @@ main {
       width: 164px;
       padding-right: 36px !important;
     }
+    small {
+      font-size: 20px;
+    }
   }
-
 }
 
 // mechanism
@@ -2098,7 +2147,7 @@ main {
     padding: 1em;
     display: block;
     color: #335C93;
-    border: 1px solid #4e4e4e;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .5);
     background:#fff;
     background-image: linear-gradient(135deg, #335C93 10px, transparent 0);
   }
@@ -2130,11 +2179,19 @@ main {
     overflow: hidden;
     background-image: linear-gradient(-45deg, #335C93 10px, transparent 0);
     // filter: drop-shadow(2px 2px 2px #4e4e4e);
-    border: 1px solid #4e4e4e;
     border-top: none;
+    &::before {
+      content:"";
+      display:block;
+      height:3px;
+      background-color:#5F5D5D;
+      top: 0;
+      position: absolute;
+    }
   }
   .toggle:checked + .Label + .content {	/*開閉時*/
     height: auto;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .5);
     padding:20px ;
     transition: all .3s;
   }
@@ -2151,6 +2208,7 @@ main {
         height: 20vw;
         top: -8vw;
         left: 13%;
+        background-size: 70vw;
       }
     }
     &-box {
@@ -2186,6 +2244,7 @@ main {
         height: 152px;
         top: -60px;
         left: 13%;
+        background-size: 526px;
       }
     }
     &-box {
@@ -2205,6 +2264,13 @@ main {
       margin-bottom:20px;
       padding:0 40px;
       background-image: linear-gradient(-45deg, #335C93 20px, transparent 0);
+      &::before {
+        width:600px;
+      }
+    }
+    .toggle:checked + .Label{
+      border-bottom: none;
+      padding-bottom: 0;
     }
     .toggle:checked + .Label + .content {	/*開閉時*/
       font-size: 28px;
@@ -2281,17 +2347,19 @@ main {
     &::before {
 
     }
-    p {
+    &.active {
       background-color: #335C93;
       color: #fff;
-      border-radius: 50%;
-      width: 36px;
-      height: 36px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-right: 12px;
     }
+  }
+  &-Q {
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    background-color: #335C93;
+    color: #fff;
+    border-radius: 50%;
+    margin-right: 12px;
   }
 
   .Label,
@@ -2344,6 +2412,7 @@ main {
         width: 27vw;
         height: 20vw;
         bottom: -6.6vw;
+        background-size: 27vw;
       }
     }
     &-logo {
@@ -2401,6 +2470,7 @@ main {
         width: 208px;
         height: 150px;
         bottom: -50px;
+        background-size: 208px;
       }
     }
     &-logo {

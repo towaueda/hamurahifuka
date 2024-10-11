@@ -379,6 +379,12 @@ main {
   .campaign {
     padding: 6.4vw 1.6vw;
   }
+  .campaign-top-img {
+    width: 92vw;
+  }
+  .campaign-discount {
+    width: 75vw;
+  }
   .campaign-ttl {
     font-size: 10vw;
   }
@@ -405,6 +411,12 @@ main {
 @media screen and (min-width: 750px) {
   .campaign {
     padding: 48px 12px;
+  }
+  .campaign-top-img {
+    width: 690px;
+  }
+  .campaign-discount {
+    width: 568px;
   }
   .campaign-ttl {
     font-size: 76px;
@@ -749,6 +761,9 @@ main {
     height: 7.4vw;
     top: 30%;
   }
+  .trouble-img {
+    width: 75vw;
+  }
   .trouble-footer {
     font-size: 4.2vw;
     padding-top: 13vw;
@@ -793,6 +808,9 @@ main {
     width: 56px;
     height: 56px;
     top: 30%;
+  }
+  .trouble-img {
+    width: 566px;
   }
   .trouble-footer {
     font-style: 32px;
@@ -981,16 +999,11 @@ main {
   }
   .solution-box::after {
     width: 37vw;
-    height: 39.2vw;
-    right: -3vw;
+    height: 39.2;
     top: -18vw;
   }
-  .solution-box-ttl::after, .solution-box-ttl::before {
-    width: 10vw;
-    height: 0.2vw;
-  }
-  .solution-box-text span {
-    font-size: 6.4vw;
+  .solution-box-img {
+    width: 81vw;
   }
   .solution-approve {
     max-width: 92vw;
@@ -1009,6 +1022,7 @@ main {
     font-size: 9.6vw;
   }
   .solution-approve img {
+    width: 92vw;
     padding: 4.2vw 0;
   }
   .solution-approve-ttl {
@@ -1048,15 +1062,10 @@ main {
   .solution-box::after {
     width: 284px;
     height: 294px;
-    right: -22px;
     top: -140px;
   }
-  .solution-box-ttl::after, .solution-box-ttl::before {
-    width: 80px;
-    height: 2px;
-  }
-  .solution-box-text span {
-    font-size: 48px;
+  .solution-box-img {
+    width: 610px;
   }
   .solution-approve {
     max-width: 690px;
@@ -1075,6 +1084,7 @@ main {
     font-size: 72px;
   }
   .solution-approve img {
+    width: 690px;
     padding: 32px 0;
   }
   .solution-approve-ttl {
@@ -1150,6 +1160,9 @@ main {
   .compare-top-ttl span {
     font-size: 7.4vw;
   }
+  .compare-img {
+    width: 100vw;
+  }
 }
 @media screen and (min-width: 750px) {
   .compare {
@@ -1172,6 +1185,9 @@ main {
   }
   .compare-top-ttl span {
     font-size: 56px;
+  }
+  .compare-img {
+    width: 750px;
   }
 }
 
@@ -1317,6 +1333,9 @@ main {
   .price-top {
     padding: 8.5vw 30px;
   }
+  .price-top-img {
+    width: 27vw;
+  }
   .price-top h2 {
     font-size: 56px;
     padding: 2.1vw 0 6.4vw;
@@ -1326,6 +1345,9 @@ main {
   }
   .price-box {
     padding: 0 3.2vw 8.5vw;
+  }
+  .price-box-img {
+    width: 92vw;
   }
   .price-box h3 {
     font-size: 5.3vw;
@@ -1398,6 +1420,9 @@ main {
   .price-top {
     padding: 64px 30px;
   }
+  .price-top-img {
+    width: 208px;
+  }
   .price-top h2 {
     font-size: 56px;
     padding: 16px 0 48px;
@@ -1407,6 +1432,9 @@ main {
   }
   .price-box {
     padding: 0 24px 64px;
+  }
+  .price-box-img {
+    width: 690px;
   }
   .price-box h3 {
     font-size: 40px;
@@ -1506,6 +1534,12 @@ main {
   .why-mesogan {
     padding: 8.5vw 3.7vw;
   }
+  .why-mesogan-img01 {
+    width: 66.8vw;
+  }
+  .why-mesogan-img02 {
+    width: 92vw;
+  }
   .why-mesogan h3 {
     font-size: 6.4vw;
     padding-top: 2vw;
@@ -1519,6 +1553,12 @@ main {
 @media screen and (min-width: 750px) {
   .why-mesogan {
     padding: 64px 28px;
+  }
+  .why-mesogan-img01 {
+    width: 501px;
+  }
+  .why-mesogan-img02 {
+    width: 690px;
   }
   .why-mesogan h3 {
     font-size: 48px;
@@ -1652,6 +1692,9 @@ main {
     height: 37.6vw;
     top: -15.4vw;
   }
+  .flow-top-img {
+    width: 32vw;
+  }
   .flow-step::before {
     font-size: 4.8vw;
   }
@@ -1688,7 +1731,7 @@ main {
     font-size: 5.8vw;
   }
   .flow p {
-    font-size: 4.2vw;
+    font-size: 5.8vw;
   }
 }
 @media screen and (min-width: 750px) {
@@ -1700,6 +1743,9 @@ main {
     width: 302px;
     height: 282px;
     top: -116px;
+  }
+  .flow-top-img {
+    width: 240px;
   }
   .flow-top p {
     font-size: 48px;
@@ -1740,7 +1786,7 @@ main {
     font-size: 44px;
   }
   .flow p {
-    font-size: 32px;
+    font-size: 44px;
   }
 }
 
@@ -1924,6 +1970,9 @@ main {
   .access {
     padding: 10vw 3.7vw;
   }
+  .access-img {
+    width: 92vw;
+  }
   .access h3 {
     font-size: 6.4vw;
   }
@@ -1953,10 +2002,16 @@ main {
     width: 21.8vw;
     padding-right: 4.8vw !important;
   }
+  .access small {
+    font-size: 2.6vw;
+  }
 }
 @media screen and (min-width: 750px) {
   .access {
     padding: 80px 28px;
+  }
+  .access-img {
+    width: 690px;
   }
   .access h3 {
     font-size: 48px;
@@ -1986,6 +2041,9 @@ main {
     font-size: 24px;
     width: 164px;
     padding-right: 36px !important;
+  }
+  .access small {
+    font-size: 20px;
   }
 }
 
@@ -2026,7 +2084,7 @@ main {
   padding: 1em;
   display: block;
   color: #335C93;
-  border: 1px solid #4e4e4e;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.5);
   background: #fff;
   background-image: linear-gradient(135deg, #335C93 10px, transparent 0);
 }
@@ -2055,11 +2113,19 @@ main {
   padding: 0 20px;
   overflow: hidden;
   background-image: linear-gradient(-45deg, #335C93 10px, transparent 0);
-  border: 1px solid #4e4e4e;
   border-top: none;
+}
+.mechanism .content::before {
+  content: "";
+  display: block;
+  height: 3px;
+  background-color: #5F5D5D;
+  top: 0;
+  position: absolute;
 }
 .mechanism .toggle:checked + .Label + .content { /*開閉時*/
   height: auto;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.5);
   padding: 20px;
   transition: all 0.3s;
 }
@@ -2079,6 +2145,7 @@ main {
     height: 20vw;
     top: -8vw;
     left: 13%;
+    background-size: 70vw;
   }
   .mechanism-box {
     padding-top: 10vw;
@@ -2116,6 +2183,7 @@ main {
     height: 152px;
     top: -60px;
     left: 13%;
+    background-size: 526px;
   }
   .mechanism-box {
     padding-top: 80px;
@@ -2134,6 +2202,13 @@ main {
     margin-bottom: 20px;
     padding: 0 40px;
     background-image: linear-gradient(-45deg, #335C93 20px, transparent 0);
+  }
+  .mechanism .content::before {
+    width: 600px;
+  }
+  .mechanism .toggle:checked + .Label {
+    border-bottom: none;
+    padding-bottom: 0;
   }
   .mechanism .toggle:checked + .Label + .content { /*開閉時*/
     font-size: 28px;
@@ -2204,15 +2279,17 @@ main {
   right: 23px;
   top: 42%;
 }
-.qa .Label p {
+.qa .Label.active {
+  background-color: #335C93;
+  color: #fff;
+}
+.qa-Q {
+  width: 36px;
+  height: 36px;
+  text-align: center;
   background-color: #335C93;
   color: #fff;
   border-radius: 50%;
-  width: 36px;
-  height: 36px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-right: 12px;
 }
 .qa .Label,
@@ -2265,6 +2342,7 @@ main {
     width: 27vw;
     height: 20vw;
     bottom: -6.6vw;
+    background-size: 27vw;
   }
   .qa-logo {
     font-size: 10vw;
@@ -2322,6 +2400,7 @@ main {
     width: 208px;
     height: 150px;
     bottom: -50px;
+    background-size: 208px;
   }
   .qa-logo {
     font-size: 80px;
