@@ -1,7 +1,6 @@
 @charset "UTF-8";
 body {
   font-family: serif;
-  max-width: px;
   margin: 0 auto;
 }
 
@@ -120,7 +119,7 @@ main {
 }
 @media screen and (min-width: 429px) {
   .header-under p {
-    font-size: 32px;
+    font-size: 4.2vw;
   }
   .header-under ::after, .header-under ::before {
     width: 3.4vw;
@@ -132,6 +131,21 @@ main {
   }
   .header-under ::after {
     right: -1.8vw;
+  }
+}
+@media screen and (min-width: 750px) {
+  .header-under p {
+    font-size: 32px;
+  }
+  .header-under ::after, .header-under ::before {
+    width: 26px;
+    height: 42px;
+  }
+  .header-under ::before {
+    left: -24px;
+  }
+  .header-under ::after {
+    right: -24px;
   }
 }
 
@@ -187,31 +201,46 @@ main {
 }
 @media screen and (min-width: 429px) {
   .mesogan-left {
-    padding: 42px 0 82px 16px;
+    padding: 5.6vw 0 10vw 2vw;
+  }
+  .mesogan-ttl {
+    font-size: 5.6vw;
+  }
+  .mesogan-name {
+    font-size: 12vw;
+    padding-bottom: 1.6vw;
+  }
+  .mesogan-text {
+    font-size: 3.2vw;
+  }
+  .mesogan-right {
+    width: 50%;
+  }
+  .mesogan-right img {
+    width: 76vw;
+    height: auto;
+  }
+}
+@media screen and (min-width: 750px) {
+  .mesogan-left {
+    padding: 42px 0 84px 38px;
   }
   .mesogan-ttl {
     font-size: 56px;
   }
   .mesogan-name {
     font-size: 92px;
-    padding-bottom: 12px;
+    padding-bottom: 1.6vw;
   }
   .mesogan-text {
     font-size: 32px;
-  }
-  .mesogan-text::after, .mesogan-text ::before {
-    width: 356px;
-    height: 1px;
   }
   .mesogan-right {
     width: 50%;
   }
   .mesogan-right img {
-    position: absolute;
     width: 666px;
     height: auto;
-    right: 0;
-    bottom: 0;
   }
 }
 
@@ -341,17 +370,20 @@ main {
   font-size: 24px;
   text-align: center;
   position: relative;
-  border-bottom: 1px solid #335C93;
   margin-bottom: 24px;
 }
 .detail h2::after {
   content: "";
-  border-left: 12px solid transparent;
-  border-right: 12px solid transparent;
-  border-top: 12px solid #335C93;
+  display: inline-block;
+  width: 100%;
+  height: 30px;
+  background-image: url("/img/megason_under.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
   position: absolute;
-  bottom: -12px;
-  left: 40%;
+  bottom: -20px;
+  left: 0;
 }
 .detail h2 span {
   font-size: 16px;
@@ -367,11 +399,48 @@ main {
   background-color: #fff;
   box-shadow: 0px 0px 0px 8px #fff;
 }
+.detail-Content::after, .detail-Content::before {
+  content: "";
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  background-image: url("/img/Polygon.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+.detail-Content::after {
+  bottom: 0;
+  transform: rotate(-90deg);
+}
+.detail-Content::before {
+  top: 0;
+}
 .detail-Content-Title {
   display: flex;
   justify-content: center;
   letter-spacing: 0.14em;
-  background-image: linear-gradient(45deg, #335C93 26px, transparent 0), linear-gradient(-45deg, #335C93 26px, transparent 0), linear-gradient(135deg, #335C93 26px, transparent 0), linear-gradient(-135deg, #335C93 26px, transparent 0);
+}
+.detail-Content-Title::after, .detail-Content-Title::before {
+  content: "";
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  background-image: url("/img/Polygon.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+.detail-Content-Title::after {
+  right: 0;
+  transform: rotate(90deg);
+}
+.detail-Content-Title::before {
+  right: 0;
+  transform: rotate(180deg);
+  bottom: 0;
 }
 .detail-Content-Title p {
   font-size: 14px;
@@ -408,11 +477,37 @@ main {
   background-repeat: repeat-x;
   background-size: 1em 0.3em;
   padding-top: 10px;
+  position: relative;
+}
+.trouble-head-ttl::before {
+  content: "";
+  display: inline-block;
+  width: 34px;
+  height: 34px;
+  background-image: url("/img/Danger.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: -35px;
 }
 .trouble-head-worries {
   color: #335C93;
   font-size: 24px;
   font-weight: bold;
+  position: relative;
+}
+.trouble-head-worries::before {
+  content: "";
+  display: inline-block;
+  width: 84px;
+  height: 9px;
+  background-image: url("/img/Concerns_under.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 0;
 }
 .trouble-wrapper {
   content: "";
@@ -510,12 +605,22 @@ main {
   color: #335C93;
 }
 .solution-box {
-  padding: 0.2em 0.5em;
-  width: 300px;
-  margin: 2em auto;
-  background: linear-gradient(90deg, #1274CE, #335C93);
-  box-shadow: 0px 0px 0px 10px #335C93;
-  border: solid 2px white;
+  text-align: center;
+  margin: 20px 0 24px;
+  position: relative;
+}
+.solution-box::after {
+  content: "";
+  display: inline-block;
+  width: 142px;
+  height: 147px;
+  background-image: url("/img/solution-oil.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: -11px;
+  top: -70px;
 }
 .solution-box-ttl {
   color: #fff;
@@ -716,14 +821,15 @@ main {
   padding: 0 9px;
   color: #fff;
   font-size: 14px;
-  background-color: #335C93;
+  font-weight: bold;
+  background: linear-gradient(90deg, #1274CE, #335C93);
 }
 .price-box-1time-original {
-  font-size: 28px;
+  font-size: 26px;
   color: #5F5D5D;
   position: relative;
   font-family: math;
-  margin: 0 8px 0 0;
+  margin: 0 0 0 8px;
 }
 .price-box-1time-original::before {
   position: absolute;
@@ -743,9 +849,8 @@ main {
   font-size: 10px;
 }
 .price-box-1time-original-discount {
-  font-size: 36px;
+  font-size: 34px;
   color: #335C93;
-  padding-left: 10px;
   font-family: math;
 }
 .price-box-1time-original-discount ruby {
@@ -780,8 +885,7 @@ main {
   margin: 0 2%;
   display: inline-block;
   color: #fff;
-  border: 1px solid #15C3DB;
-  background-color: #335C93;
+  background: linear-gradient(90deg, #1274CE, #335C93);
   transform: skewX(150deg);
 }
 
@@ -835,22 +939,37 @@ main {
 .flow-step {
   display: flex;
   position: relative;
-  color: #335C93;
+  background: linear-gradient(90deg, #1274CE, #335C93);
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
   justify-content: center;
   z-index: 5;
 }
 .flow-step::before {
   content: "簡単";
   writing-mode: vertical-rl;
+  background: linear-gradient(90deg, #1274CE, #335C93);
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
   position: absolute;
   left: 17%;
   top: 45%;
 }
 .flow-step-number {
   font-size: 67px;
+  background: linear-gradient(90deg, #1274CE, #335C93);
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 .flow-step-number span {
   font-size: 87px;
+  background: linear-gradient(90deg, #1274CE, #335C93);
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 .flow-step-number::before {
   position: absolute;
@@ -859,7 +978,7 @@ main {
   content: "";
   width: 1px;
   height: 30%;
-  background: #335C93;
+  background: linear-gradient(90deg, #1274CE, #335C93);
   border-radius: 3px;
   transform: rotate(-75deg);
 }
@@ -870,7 +989,7 @@ main {
   top: 80px;
   width: 1px;
   height: 30%;
-  background: #335C93;
+  background: linear-gradient(90deg, #1274CE, #335C93);
   border-radius: 3px;
   transform: rotate(75deg);
 }
@@ -892,8 +1011,12 @@ main {
   font-size: 10px;
 }
 .flow-step01-top p {
-  color: #335C93;
+  background: linear-gradient(90deg, #1274CE, #335C93);
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
   font-size: 22px;
+  font-weight: bold;
 }
 .flow-step01 p {
   text-align: left;
@@ -927,16 +1050,54 @@ main {
   display: inline-block;
   width: 24px;
   height: 24px;
-  background-image: url("/img/bright-stars.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
   top: 16px;
 }
+.details-contents-01::before {
+  background-image: url("/img/bright-stars.png");
+}
+.details-contents-02::before {
+  background-image: url("/img/Bath-tub.png");
+}
+.details-contents-03::before {
+  background-image: url("/img/Calendar-squares.png");
+}
+.details-contents-04::before {
+  background-image: url("/img/Thunder.png");
+}
+.details-contents-05::before {
+  background-image: url("/img/Injecting-Syringe.png");
+}
+.details-contents-06::before {
+  background-image: url("/img/Recovery.png");
+}
+.details-contents-07::before {
+  background-image: url("/img/Makeup-palette.png");
+}
+.details-contents-08::before {
+  background-image: url("/img/Washing.png");
+}
+.details-contents-09::before {
+  background-image: url("/img/Shower-head.png");
+}
+.details-contents-10::before {
+  background-image: url("/img/Bath-tub.png");
+}
+.details-contents-11::before {
+  background-image: url("/img/Cold-sore.png");
+}
+.details-contents-12::before {
+  background-image: url("/img/Caution sign.png");
+}
 .details-contents p {
   text-align: left;
   padding: 4px 0 4px 27px;
+}
+.details-content-text {
+  padding-left: 27px;
 }
 
 .access {
@@ -970,15 +1131,12 @@ main {
 .access table {
   width: 100%;
   color: #5F5D5D;
-  margin: 16px 0 16px 10px;
+  margin: 16px 0 0 0;
 }
 .access table tr {
   border-bottom: 1px solid #B5B5B5;
 }
 .access table th {
-  padding: 16px 0;
-}
-.access table td {
   padding: 16px 0;
 }
 .access-first {
@@ -1012,7 +1170,7 @@ main {
   background-repeat: no-repeat;
   position: absolute;
   top: -30px;
-  left: 16%;
+  left: 13%;
 }
 .mechanism-box {
   padding-top: 40px;
@@ -1024,9 +1182,9 @@ main {
   padding: 1em;
   display: block;
   color: #335C93;
+  border: 1px solid #4e4e4e;
   background: #fff;
   background-image: linear-gradient(135deg, #335C93 10px, transparent 0);
-  filter: drop-shadow(2px 2px 2px #4e4e4e);
 }
 .mechanism .Label::before { /*タイトル横の矢印*/
   content: "";
@@ -1107,7 +1265,7 @@ main {
 }
 .qa .Label {
   font-size: 16px;
-  padding: 1em;
+  padding: 1em 2rem 1rem 1rem;
   display: flex;
   align-items: center;
   color: #335C93;
@@ -1134,8 +1292,9 @@ main {
   border-radius: 50%;
   width: 36px;
   height: 36px;
-  text-align: center;
-  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-right: 12px;
 }
 .qa .Label,
@@ -1164,6 +1323,9 @@ main {
   border-radius: 50px;
   background-color: #335C93;
   color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-right: 12px;
 }
 .qa .toggle:checked + .Label + .content { /*開閉時*/
