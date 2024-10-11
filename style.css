@@ -11,6 +11,7 @@ header {
   justify-content: flex-start;
   align-items: center;
   padding: 14px 0 14px 16px;
+  margin: 0 auto;
 }
 header img {
   width: auto;
@@ -44,6 +45,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding: 16px 15px 15px 18px;
+  margin: 0 auto;
 }
 footer img {
   width: 31px;
@@ -539,6 +541,7 @@ main {
     font-size: 4.2vw;
   }
   .detail h2 img {
+    width: 13vw;
     left: -6.4vw;
     top: -5.3vw;
   }
@@ -580,6 +583,7 @@ main {
     font-size: 32px;
   }
   .detail h2 img {
+    width: 98px;
     left: -48px;
     top: -40px;
   }
@@ -2334,7 +2338,7 @@ main {
   }
   .qa .Label {
     font-size: 32px;
-    padding: 1em 2rem 1rem 1rem;
+    padding: 1em 4rem 1rem 1rem;
   }
   .qa .Label::before, .qa .Label::after {
     width: 30px;
