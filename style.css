@@ -850,6 +850,9 @@ main {
   }
 }
 
+.solution {
+  overflow-x: hidden;
+}
 .solution-top {
   background-color: #F68E2F;
   width: 100px;
@@ -1912,7 +1915,7 @@ main {
   background-image: url("/img/Cold-sore.svg");
 }
 .details-contents-12::before {
-  background-image: url("./img/Caution sign.svg");
+  background-image: url("./img/Caution-sign.svg");
 }
 .details-contents p {
   font-size: 14px;
@@ -2356,7 +2359,7 @@ main {
 .qa-Q {
   width: 36px;
   height: 36px;
-  padding: 0 13px;
+  padding: 0;
   border-radius: 50px;
   background-color: #335C93;
   color: #fff;

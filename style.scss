@@ -857,6 +857,7 @@ main {
 
 // Solution
 .solution {
+  overflow-x: hidden;
   &-top{
     background-color: #F68E2F;
     width: 100px;
@@ -1979,7 +1980,7 @@ main {
     }
     &-12 {
       &::before {
-        background-image: url('./img/Caution sign.svg');
+        background-image: url('./img/Caution-sign.svg');
       }
     }
     p {
@@ -2429,7 +2430,7 @@ main {
   &-Q {
     width: 36px;
     height: 36px;
-    padding: 0 13px;
+    padding: 0;
     border-radius: 50px;
     background-color: #335C93;
     color: #fff;
