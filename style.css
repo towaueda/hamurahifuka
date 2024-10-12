@@ -3,6 +3,11 @@ body {
   font-family: serif;
   margin: 0 auto;
 }
+@media screen and (min-width: 429px) {
+  body {
+    background-color: #fff;
+  }
+}
 
 header {
   max-width: 750px;
@@ -181,7 +186,10 @@ main {
   -webkit-text-stroke-color: #fff;
   padding-bottom: 6px;
 }
-.mesogan-text::after, .mesogan-text ::before {
+.mesogan-text {
+  position: relative;
+}
+.mesogan-text::after, .mesogan-text::before {
   content: "";
   display: inline-block;
   width: 178px;
@@ -189,6 +197,12 @@ main {
   background-image: url("/img/mesogan-border.png");
   background-position: center;
   background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: -13px;
+}
+.mesogan-text::after {
+  bottom: 0;
 }
 .mesogan-right {
   width: 50%;
@@ -196,8 +210,8 @@ main {
 }
 .mesogan-right img {
   position: absolute;
-  width: 333px;
-  height: 283px;
+  width: 300px;
+  height: auto;
   right: 0;
   bottom: 0;
 }
@@ -215,11 +229,15 @@ main {
   .mesogan-text {
     font-size: 3.2vw;
   }
+  .mesogan-text::after, .mesogan-text::before {
+    width: 47vw;
+    height: 2px;
+  }
   .mesogan-right {
     width: 50%;
   }
   .mesogan-right img {
-    width: 76vw;
+    width: 70vw;
     height: auto;
   }
 }
@@ -237,11 +255,14 @@ main {
   .mesogan-text {
     font-size: 32px;
   }
+  .mesogan-text::after, .mesogan-text::before {
+    width: 356px;
+  }
   .mesogan-right {
     width: 50%;
   }
   .mesogan-right img {
-    width: 666px;
+    width: 570px;
     height: auto;
   }
 }
@@ -273,6 +294,7 @@ main {
   color: #fff;
   border: 1px solid #fff;
   background-image: linear-gradient(-45deg, #fff 12px, transparent 0), linear-gradient(135deg, #fff 12px, transparent 0);
+  margin-bottom: 5px;
 }
 .Item-Content-Title p {
   font-size: 12px;
@@ -285,6 +307,7 @@ main {
 @media screen and (min-width: 429px) {
   .Item-Content-Title {
     background-image: linear-gradient(-45deg, #fff 3.3vw, transparent 0), linear-gradient(135deg, #fff 3.3vw, transparent 0);
+    margin-bottom: 1.3vw;
   }
   .Item-Content-Title p {
     font-size: 3.2vw;
@@ -294,6 +317,7 @@ main {
 @media screen and (min-width: 750px) {
   .Item-Content-Title {
     background-image: linear-gradient(-45deg, #fff 12px, transparent 0), linear-gradient(135deg, #fff 12px, transparent 0);
+    margin-bottom: 10px;
   }
   .Item-Content-Title p {
     font-size: 24px;
@@ -312,6 +336,12 @@ main {
   background-size: contain;
   text-align: center;
   padding: 24px 6px;
+}
+.campaign-top-img {
+  width: 345px;
+}
+.campaign-discount {
+  width: 284px;
 }
 .campaign-ttl {
   color: #99A9AC;
@@ -733,6 +763,7 @@ main {
     padding-top: 2.6vw;
   }
   .trouble-head-ttl::before {
+    background-size: 9vw;
     width: 6.4vw;
     height: 6.4vw;
     left: -9.3vw;
@@ -781,6 +812,7 @@ main {
     padding-top: 20px;
   }
   .trouble-head-ttl::before {
+    background-size: 68px;
     width: 68px;
     height: 68px;
     left: -70px;
@@ -844,7 +876,7 @@ main {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  background-size: 375px;
+  background-size: 390px;
 }
 .solution-top-box::before {
   content: "";
@@ -873,6 +905,9 @@ main {
   text-align: center;
   margin: 20px 0 24px;
   position: relative;
+}
+.solution-box-img {
+  width: 305px;
 }
 .solution-box::after {
   content: "";
@@ -980,7 +1015,7 @@ main {
     margin-left: -0.6vw;
   }
   .solution-top-box {
-    background-size: 100VW;
+    background-size: 104VW;
   }
   .solution-top-box::before {
     border-left: 50vw solid transparent;
@@ -999,8 +1034,9 @@ main {
   }
   .solution-box::after {
     width: 37vw;
-    height: 39.2;
+    height: 39.2vw;
     top: -18vw;
+    right: -2.8vw;
   }
   .solution-box-img {
     width: 81vw;
@@ -1042,7 +1078,7 @@ main {
     margin-left: -5px;
   }
   .solution-top-box {
-    background-size: 750px;
+    background-size: 785px;
   }
   .solution-top-box::before {
     border-left: 374px solid transparent;
@@ -1063,6 +1099,7 @@ main {
     width: 284px;
     height: 294px;
     top: -140px;
+    right: -24px;
   }
   .solution-box-img {
     width: 610px;
@@ -1138,6 +1175,9 @@ main {
   font-size: 28px;
   color: #335C93;
 }
+.compare-img {
+  width: 375px;
+}
 @media screen and (min-width: 429px) {
   .compare {
     width: 100vw;
@@ -1200,6 +1240,9 @@ main {
   color: #5F5D5D;
   padding: 32px 15px;
 }
+.price-top-img {
+  width: 104px;
+}
 .price-top h2 {
   text-align: center;
   font-size: 28px;
@@ -1218,6 +1261,7 @@ main {
 .price-box h3 {
   font-size: 20px;
   font-weight: 900;
+  color: #5F5D5D;
   text-align: center;
   position: relative;
   padding: 19px 0 13px;
@@ -1225,15 +1269,16 @@ main {
 .price-box h3::before {
   content: "";
   display: inline-block;
-  width: 171px;
-  height: 35px;
+  width: 180px;
+  height: 45px;
   background-image: url("/img/Subtract.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+  background-size: 180px;
   position: absolute;
-  left: 26%;
-  top: 11px;
+  left: 24%;
+  top: 9px;
 }
 .price-box01 {
   display: flex;
@@ -1292,7 +1337,7 @@ main {
 .price-box-1time-original-discount {
   font-size: 34px;
   color: #335C93;
-  font-family: math;
+  font-family: inherit;
 }
 .price-box-1time-original-discount ruby {
   font-size: 16px;
@@ -1337,7 +1382,7 @@ main {
     width: 27vw;
   }
   .price-top h2 {
-    font-size: 56px;
+    font-size: 7.4vw;
     padding: 2.1vw 0 6.4vw;
   }
   .price-top p {
@@ -1354,10 +1399,10 @@ main {
     padding: 5vw 0 3.4vw;
   }
   .price-box h3::before {
-    width: 45.6vw;
-    height: 70px;
-    left: 26%;
-    top: 22px;
+    width: 48vw;
+    height: 12vw;
+    left: 24%;
+    background-size: 48vw;
   }
   .price-box01 img {
     height: 3.4vw;
@@ -1441,10 +1486,11 @@ main {
     padding: 38px 0 26px;
   }
   .price-box h3::before {
-    width: 342px;
-    height: 70px;
+    width: 360px;
+    height: 85px;
     left: 26%;
     top: 22px;
+    background-size: 360px;
   }
   .price-box01 img {
     height: 26px;
@@ -1508,6 +1554,9 @@ main {
   background-color: #F7F7F7;
   text-align: center;
   padding: 32px 14px;
+}
+.why-mesogan-img01 {
+  width: 250px;
 }
 .why-mesogan h3 {
   text-align: center;
@@ -1587,6 +1636,9 @@ main {
   top: -58px;
   left: 29%;
   z-index: 1;
+}
+.flow-top-img {
+  width: 137px;
 }
 .flow-top p {
   font-size: 24px;
@@ -1678,8 +1730,10 @@ main {
   font-size: 22px;
   font-weight: bold;
 }
-.flow-step01 p {
+.flow-step01-top-text {
   font-size: 16px;
+}
+.flow-step01 p {
   text-align: left;
 }
 @media screen and (min-width: 429px) {
@@ -1712,7 +1766,7 @@ main {
   }
   .flow-step-number::after {
     left: 19vw;
-    top: 21vw;
+    top: 22vw;
     width: 1px;
     border-radius: 6px;
   }
@@ -1730,8 +1784,8 @@ main {
   .flow-step01-top p {
     font-size: 5.8vw;
   }
-  .flow p {
-    font-size: 5.8vw;
+  .flow-step01-top-text {
+    font-size: 4.2vw;
   }
 }
 @media screen and (min-width: 750px) {
@@ -1785,8 +1839,8 @@ main {
   .flow-step01-top p {
     font-size: 44px;
   }
-  .flow p {
-    font-size: 44px;
+  .flow-step01-top-text {
+    font-size: 32px;
   }
 }
 
@@ -1825,47 +1879,48 @@ main {
   top: 16px;
 }
 .details-contents-01::before {
-  background-image: url("/img/bright-stars.png");
+  background-image: url("/img/bright-stars.svg");
 }
 .details-contents-02::before {
-  background-image: url("/img/Bath-tub.png");
+  background-image: url("/img/Bath-tub.svg");
 }
 .details-contents-03::before {
-  background-image: url("/img/Calendar-squares.png");
+  background-image: url("/img/Calendar-squares.svg");
 }
 .details-contents-04::before {
-  background-image: url("/img/Thunder.png");
+  background-image: url("/img/Thunder.svg");
 }
 .details-contents-05::before {
-  background-image: url("/img/Injecting-Syringe.png");
+  background-image: url("/img/Injecting-Syringe.svg");
 }
 .details-contents-06::before {
-  background-image: url("/img/Recovery.png");
+  background-image: url("/img/Recovery.svg");
 }
 .details-contents-07::before {
-  background-image: url("/img/Makeup-palette.png");
+  background-image: url("/img/Makeup-palette.svg");
 }
 .details-contents-08::before {
-  background-image: url("/img/Washing.png");
+  background-image: url("/img/Washing.svg");
 }
 .details-contents-09::before {
-  background-image: url("/img/Shower-head.png");
+  background-image: url("/img/Shower-head.svg");
 }
 .details-contents-10::before {
-  background-image: url("/img/Bath-tub.png");
+  background-image: url("/img/Bath-tub.svg");
 }
 .details-contents-11::before {
-  background-image: url("/img/Cold-sore.png");
+  background-image: url("/img/Cold-sore.svg");
 }
 .details-contents-12::before {
-  background-image: url("/img/Caution sign.png");
+  background-image: url("/img/Caution sign.svg");
 }
 .details-contents p {
-  font-size: 16px;
+  font-size: 14px;
   text-align: left;
   padding: 4px 0 4px 27px;
 }
 .details-content-text {
+  font-size: 14px;
   padding-left: 27px;
 }
 @media screen and (min-width: 429px) {
@@ -1891,6 +1946,7 @@ main {
     padding: 1vw 0 1vw 7vw;
   }
   .details-content-text {
+    font-size: 3.7vw;
     padding-left: 7vw;
   }
 }
@@ -1917,6 +1973,7 @@ main {
     padding: 8px 0 8px 54px;
   }
   .details-content-text {
+    font-size: 28px;
     padding-left: 54px;
   }
 }
@@ -1952,8 +2009,9 @@ main {
 }
 .access table {
   width: 100%;
+  font-size: 12px;
   color: #5F5D5D;
-  margin: 16px 0 0 0;
+  margin: 0;
 }
 .access table tr {
   border-bottom: 1px solid #B5B5B5;
@@ -1964,6 +2022,7 @@ main {
 .access-first {
   width: 82px;
   font-weight: bold;
+  padding-left: 10px !important;
   padding-right: 18px !important;
 }
 @media screen and (min-width: 429px) {
@@ -1991,7 +2050,7 @@ main {
     padding: 3.2vw 0 3.2vw 2.6vw;
   }
   .access table {
-    margin: 4.2vw 0 0 0;
+    margin: 0;
   }
   .access table th {
     font-size: 3.4vw;
@@ -2000,6 +2059,7 @@ main {
   .access-first {
     font-size: 3.2vw;
     width: 21.8vw;
+    padding-left: 2.6vw !important;
     padding-right: 4.8vw !important;
   }
   .access small {
@@ -2031,7 +2091,7 @@ main {
     padding: 24px 0 24px 20px;
   }
   .access table {
-    margin: 32px 0 0 0;
+    margin: 0;
   }
   .access table th {
     font-size: 26px;
@@ -2040,6 +2100,7 @@ main {
   .access-first {
     font-size: 24px;
     width: 164px;
+    padding-left: 20px !important;
     padding-right: 36px !important;
   }
   .access small {
@@ -2118,7 +2179,8 @@ main {
 .mechanism .content::before {
   content: "";
   display: block;
-  height: 3px;
+  width: 311px;
+  height: 1px;
   background-color: #5F5D5D;
   top: 0;
   position: absolute;
@@ -2164,6 +2226,9 @@ main {
     margin-bottom: 2.6vw;
     padding: 0 5.3vw;
     background-image: linear-gradient(-45deg, #335C93 2.6vw, transparent 0);
+  }
+  .mechanism .content::before {
+    width: 80vw;
   }
   .mechanism .toggle:checked + .Label + .content { /*開閉時*/
     font-size: 3.7vw;
@@ -2232,6 +2297,7 @@ main {
   background-image: url("/img/qa-gun.png");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: 104px;
   position: absolute;
   bottom: -25px;
   right: 0;
@@ -2250,7 +2316,7 @@ main {
   font-size: 26px;
   padding-bottom: 20px;
 }
-.qa-box {
+.qa .qa-box {
   padding: 32px 16px;
 }
 .qa .toggle {
@@ -2264,8 +2330,12 @@ main {
   color: #335C93;
   background: #fff;
   filter: drop-shadow(1px 1px 1px #4e4e4e);
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
 }
-.qa .Label::before, .qa .Label::after {
+.qa .Label::before,
+.qa .Label::after {
   content: "";
   width: 15px;
   height: 6px;
@@ -2286,10 +2356,13 @@ main {
 .qa-Q {
   width: 36px;
   height: 36px;
-  text-align: center;
+  padding: 0 13px;
+  border-radius: 50px;
   background-color: #335C93;
   color: #fff;
-  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-right: 12px;
 }
 .qa .Label,
@@ -2308,9 +2381,6 @@ main {
   overflow: hidden;
   filter: drop-shadow(2px 2px 2px #4e4e4e);
 }
-.qa .content p {
-  font-size: 16px;
-}
 .qa-A {
   width: 36px;
   height: 36px;
@@ -2323,7 +2393,14 @@ main {
   align-items: center;
   margin-right: 12px;
 }
-.qa .toggle:checked + .Label + .content { /*開閉時*/
+.qa-A-text {
+  font-size: 16px;
+  background: linear-gradient(90deg, #1274CE, #335C93);
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+.qa .toggle:checked + .Label + .content {
   height: auto;
   padding: 16px;
   transition: all 0.3s;
@@ -2333,6 +2410,20 @@ main {
 }
 .qa .toggle:checked + .Label::before {
   border-top: none;
+}
+.qa .toggle:checked + .Label {
+  background-color: #335C93;
+  color: #fff;
+}
+.qa .toggle:checked + .Label .qa-Q {
+  background-color: #fff;
+  color: #335C93;
+}
+.qa .toggle:checked + .Label::after {
+  background-color: #fff;
+}
+.qa .toggle:not(:checked) + .Label {
+  background-color: #fff;
 }
 @media screen and (min-width: 429px) {
   .qa-top {
@@ -2359,7 +2450,7 @@ main {
   }
   .qa .Label {
     font-size: 4.2vw;
-    padding: 1em 2rem 1rem 1rem;
+    padding: 1em 4rem 1rem 1rem;
   }
   .qa .Label::before, .qa .Label::after {
     width: 4vw;
@@ -2387,6 +2478,9 @@ main {
     padding: 0 3.4vw;
     border-radius: 13vw;
     margin-right: 3.2vw;
+  }
+  .qa-A-text {
+    font-size: 4.2vw;
   }
   .qa .toggle:checked + .Label + .content { /*開閉時*/
     padding: 4.2vw;
@@ -2445,6 +2539,9 @@ main {
     padding: 0 26px;
     border-radius: 100px;
     margin-right: 24px;
+  }
+  .qa-A-text {
+    font-size: 32px;
   }
   .qa .toggle:checked + .Label + .content { /*開閉時*/
     padding: 32px;

@@ -2,6 +2,9 @@ body {
   font-family: serif;
   // max-width: px;
   margin: 0 auto;
+  @media screen and (min-width: 429px) {
+    background-color: #fff;
+  }
 }
 // p {
 //   text-align: center;
@@ -188,7 +191,8 @@ main {
     padding-bottom: 6px;
   }
   &-text {
-    &::after,::before {
+    position: relative;
+    &::after,&::before {
       content: "";
       display: inline-block;
       width: 178px;
@@ -196,6 +200,15 @@ main {
       background-image: url('/img/mesogan-border.png');
       background-position: center;
       background-size: contain;
+      background-repeat: no-repeat;
+      position: absolute;
+      left: -13px;
+    }
+    &::after {
+      bottom: 0;
+    }
+    &::before {
+
     }
   }
   &-right {
@@ -203,8 +216,8 @@ main {
     position: relative;
     img {
       position: absolute;
-      width: 333px;
-      height: 283px;
+      width: 300px;
+      height: auto;
       right: 0;
       bottom: 0;
     }
@@ -222,11 +235,15 @@ main {
     }
     &-text {
       font-size: 3.2vw;
+      &::after,&::before {
+        width: 47vw;
+        height: 2px;
+      }  
     }
     &-right {
       width: 50%;
       img {
-        width: 76vw;
+        width: 70vw;
         height: auto;
       }
     }
@@ -244,11 +261,14 @@ main {
     }
     &-text {
       font-size: 32px;
+      &::after,&::before {
+        width: 356px;
+      }  
     }
     &-right {
       width: 50%;
       img {
-        width: 666px;
+        width: 570px;
         height: auto;
       }
     }
@@ -283,6 +303,7 @@ main {
   color: #fff;
   border: 1px solid #fff;
   background-image: linear-gradient(-45deg, #fff 12px, transparent 0), linear-gradient(135deg, #fff 12px, transparent 0);
+  margin-bottom: 5px;
   p {
     font-size: 12px;
     padding: 9px 12px;
@@ -293,6 +314,7 @@ main {
   }
   @media screen and (min-width: 429px) {
     background-image: linear-gradient(-45deg, #fff 3.3vw, transparent 0), linear-gradient(135deg, #fff 3.3vw, transparent 0);
+    margin-bottom: 1.3vw;
     p {
       font-size: 3.2vw;
       padding: 2.4vw 3.2vw;
@@ -300,6 +322,7 @@ main {
   }
   @media screen and (min-width: 750px) {
     background-image: linear-gradient(-45deg, #fff 12px, transparent 0), linear-gradient(135deg, #fff 12px, transparent 0);
+    margin-bottom: 10px;
     p {
       font-size: 24px;
       padding: 18px 24px;
@@ -319,6 +342,12 @@ main {
   background-size: contain;
   text-align: center;
   padding: 24px 6px;
+  &-top-img {
+    width: 345px;
+  }
+  &-discount {
+    width: 284px;
+  }
   &-ttl {
     color: #99A9AC;
     font-size: 38px;
@@ -736,6 +765,7 @@ main {
         background-size: 1em 0.3em;
         padding-top: 2.6vw;
         &::before {
+          background-size: 9vw;
           width: 6.4vw;
           height: 6.4vw;
           left: -9.3vw;
@@ -784,6 +814,7 @@ main {
         background-size: 1em 0.3em;
         padding-top: 20px;
         &::before {
+          background-size: 68px;
           width: 68px;
           height: 68px;
           left: -70px;
@@ -855,7 +886,7 @@ main {
       background-position: center;
       background-size: contain;
       background-repeat: no-repeat;
-      background-size: 375px;
+      background-size: 390px;
       &::before {
         content: "";
         /* width: 100%; */
@@ -885,6 +916,9 @@ main {
     text-align: center;
     margin: 20px 0 24px;
     position: relative;
+    &-img {
+      width: 305px;
+    }
     &::after {
       content: "";
       display: inline-block;
@@ -1002,7 +1036,7 @@ main {
         margin-left: -0.6vw;
       }
       &-box {
-        background-size: 100VW;
+        background-size: 104VW;
         &::before {
           border-left: 50vw solid transparent;
           border-right: 50vw solid transparent;
@@ -1021,8 +1055,9 @@ main {
       margin: 5.3vw 0 6.4vw;
       &::after {
         width: 37vw;
-        height: 39.2;
+        height: 39.2vw;
         top: -18vw;
+        right: -2.8vw;
       }
       &-img {
         width: 81vw;
@@ -1064,7 +1099,7 @@ main {
         margin-left: -5px;
       }
       &-box {
-        background-size: 750px;
+        background-size: 785px;
         &::before {
           border-left: 374px solid transparent;
           border-right: 374px solid transparent;
@@ -1085,6 +1120,7 @@ main {
         width: 284px;
         height: 294px;
         top: -140px;
+        right: -24px;
       }
       &-img {
         width: 610px;
@@ -1166,6 +1202,9 @@ main {
       }
     }
   }
+  &-img {
+    width: 375px;
+  }
   @media screen and (min-width: 429px) {
     width: 100vw;
     &-top {
@@ -1226,6 +1265,9 @@ main {
     text-align: center;
     color: #5F5D5D;
     padding: 32px 15px;
+    &-img {
+      width: 104px;
+    }
     h2 {
       text-align: center;
       font-size: 28px;
@@ -1244,21 +1286,23 @@ main {
     h3 {
       font-size: 20px;
       font-weight: 900;
+      color: #5F5D5D;
       text-align: center;
       position: relative;
       padding: 19px 0 13px;
       &::before {
         content: "";
         display: inline-block;
-        width: 171px;
-        height: 35px;
+        width: 180px;
+        height: 45px;
         background-image: url('/img/Subtract.png');
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
+        background-size: 180px;
         position: absolute;
-        left: 26%;
-        top: 11px;
+        left: 24%;
+        top: 9px;
       }
     }
     &01 {
@@ -1316,7 +1360,7 @@ main {
         &-discount {
           font-size: 34px;
           color: #335C93;
-          font-family: math;
+          font-family: inherit;
           ruby {
             font-size: 16px;
             color: #5F5D5D;
@@ -1365,7 +1409,7 @@ main {
         width: 27vw;
       }
       h2 {
-        font-size: 56px;
+        font-size: 7.4vw;
         padding: 2.1vw 0 6.4vw;
       }
       p {
@@ -1381,10 +1425,10 @@ main {
         font-size: 5.3vw;
         padding: 5vw 0 3.4vw;
         &::before {
-          width: 45.6vw;
-          height: 70px;
-          left: 26%;
-          top: 22px;
+          width: 48vw;
+          height: 12vw;
+          left: 24%;
+          background-size: 48vw;
         }
       }
       &01 {
@@ -1472,10 +1516,11 @@ main {
         font-size: 40px;
         padding: 38px 0 26px;
         &::before {
-          width: 342px;
-          height: 70px;
+          width: 360px;
+          height: 85px;
           left: 26%;
           top: 22px;
+          background-size: 360px;
         }
       }
       &01 {
@@ -1547,6 +1592,9 @@ main {
   background-color: #F7F7F7;
   text-align: center;
   padding: 32px 14px;
+  &-img01 {
+    width: 250px;
+  }
   h3 {
     text-align: center;
     font-size: 24px;
@@ -1622,6 +1670,9 @@ main {
     top: -58px;
     left: 29%;
     z-index: 1;
+    &-img {
+      width: 137px;
+    }
     p {
       font-size: 24px;
       text-align: center;
@@ -1714,9 +1765,11 @@ main {
         font-size: 22px;
         font-weight: bold;
       }
+      &-text {
+        font-size: 16px;
+      }
     }
     p {
-      font-size: 16px;
       text-align: left;
     }
   }
@@ -1748,7 +1801,7 @@ main {
         }
         &::after {
           left: 19vw;
-          top: 21vw;
+          top: 22vw;
           width: 1px;
           border-radius: 6px;
         }
@@ -1768,10 +1821,10 @@ main {
         p {
           font-size: 5.8vw;
         }
+        &-text {
+          font-size: 4.2vw;
+        }
       }
-    }
-    p {
-      font-size: 5.8vw;
     }
   }
   @media screen and (min-width: 750px) {
@@ -1825,11 +1878,14 @@ main {
         p {
           font-size: 44px;
         }
+        &-text {
+          font-size: 32px;
+        }
       }
     }
-    p {
-      font-size: 44px;
-    }
+    // p {
+    //   font-size: 44px;
+    // }
   }
 }
 
@@ -1868,71 +1924,72 @@ main {
     }
     &-01 {
       &::before {
-        background-image: url('/img/bright-stars.png');
+        background-image: url('/img/bright-stars.svg');
       }
     }
     &-02 {
       &::before {
-        background-image: url('/img/Bath-tub.png');
+        background-image: url('/img/Bath-tub.svg');
       }
     }
     &-03 {
       &::before {
-        background-image: url('/img/Calendar-squares.png');
+        background-image: url('/img/Calendar-squares.svg');
       }
     }
     &-04 {
       &::before {
-        background-image: url('/img/Thunder.png');
+        background-image: url('/img/Thunder.svg');
       }
     }
     &-05 {
       &::before {
-        background-image: url('/img/Injecting-Syringe.png');
+        background-image: url('/img/Injecting-Syringe.svg');
       }
     }
     &-06 {
       &::before {
-        background-image: url('/img/Recovery.png');
+        background-image: url('/img/Recovery.svg');
       }
     }
     &-07 {
       &::before {
-        background-image: url('/img/Makeup-palette.png');
+        background-image: url('/img/Makeup-palette.svg');
       }
     }
     &-08 {
       &::before {
-        background-image: url('/img/Washing.png');
+        background-image: url('/img/Washing.svg');
       }
     }
     &-09 {
       &::before {
-        background-image: url('/img/Shower-head.png');
+        background-image: url('/img/Shower-head.svg');
       }
     }
     &-10 {
       &::before {
-        background-image: url('/img/Bath-tub.png');
+        background-image: url('/img/Bath-tub.svg');
       }
     }
     &-11 {
       &::before {
-        background-image: url('/img/Cold-sore.png');
+        background-image: url('/img/Cold-sore.svg');
       }
     }
     &-12 {
       &::before {
-        background-image: url('/img/Caution sign.png');
+        background-image: url('/img/Caution sign.svg');
       }
     }
     p {
-      font-size: 16px;
+      font-size: 14px;
       text-align: left;
       padding: 4px 0 4px 27px;
     }
   }
   &-content-text {
+    font-size: 14px;
     padding-left: 27px;
   }
   @media screen and (min-width: 429px) {
@@ -1956,6 +2013,7 @@ main {
       }
     }
     &-content-text {
+      font-size: 3.7vw;
       padding-left: 7vw;
     }
   }
@@ -1980,6 +2038,7 @@ main {
       }
     }
     &-content-text {
+      font-size: 28px;
       padding-left: 54px;
     }
   }
@@ -2016,9 +2075,11 @@ main {
   }
   table {
     width: 100%;
+    font-size: 12px;
     color: #5F5D5D;
-    margin: 16px 0 0 0;
+    margin: 0;
     tr {
+
       border-bottom: 1px solid #B5B5B5;
     }
     th {
@@ -2030,6 +2091,7 @@ main {
   &-first {
     width: 82px;
     font-weight: bold;
+    padding-left: 10px !important;
     padding-right: 18px !important;
   }
   @media screen and (min-width: 429px) {
@@ -2055,7 +2117,7 @@ main {
       padding: 3.2vw 0 3.2vw 2.6vw;
     }
     table {
-      margin: 4.2vw 0 0 0;
+      margin: 0;
       th {
         font-size: 3.4vw;
         padding: 4.2vw 0;
@@ -2064,6 +2126,7 @@ main {
     &-first {
       font-size: 3.2vw;
       width: 21.8vw;
+      padding-left: 2.6vw !important;
       padding-right: 4.8vw !important;
     }
     small {
@@ -2093,7 +2156,7 @@ main {
       padding: 24px 0 24px 20px;
     }
     table {
-      margin: 32px 0 0 0;
+      margin: 0;
       th {
         font-size: 26px;
         padding: 32px 0;
@@ -2102,6 +2165,7 @@ main {
     &-first {
       font-size: 24px;
       width: 164px;
+      padding-left: 20px !important;
       padding-right: 36px !important;
     }
     small {
@@ -2183,7 +2247,8 @@ main {
     &::before {
       content:"";
       display:block;
-      height:3px;
+      width: 311px;
+      height:1px;
       background-color:#5F5D5D;
       top: 0;
       position: absolute;
@@ -2228,6 +2293,9 @@ main {
       margin-bottom:2.6vw;
       padding:0 5.3vw;
       background-image: linear-gradient(-45deg, #335C93 2.6vw, transparent 0);
+      &::before {
+        width:80vw;
+      }
     }
     .toggle:checked + .Label + .content {	/*開閉時*/
       font-size: 3.7vw;
@@ -2297,6 +2365,7 @@ main {
       background-image: url('/img/qa-gun.png');
       background-position: center;
       background-repeat: no-repeat;
+      background-size: 104px;
       position: absolute;
       bottom: -25px;
       right: 0;
@@ -2316,73 +2385,48 @@ main {
     font-size: 26px;
     padding-bottom: 20px;
   }
-  &-box {
+  .qa-box {
     padding: 32px 16px;
   }
+
   .toggle {
     display: none;
   }
+
   .Label {
     font-size: 16px;
     padding: 1em 2rem 1rem 1rem;
     display: flex;
     align-items: center;
     color: #335C93;
-    background:#fff;
+    background: #fff;
     filter: drop-shadow(1px 1px 1px #4e4e4e);
-    &::before,&::after{
-      content:"";
-      width: 15px;
-      height: 6px;
-      border-top: 2px solid #335C93;
-      position: absolute;
-      top: 47%;
-      right: 20px;
-    }
-    &::after {
-      transform: rotate(90deg);
-      right: 23px;
-      top: 42%;
-    }
-    &::before {
-
-    }
-    &.active {
-      background-color: #335C93;
-      color: #fff;
-    }
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
   }
-  &-Q {
-    width: 36px;
-    height: 36px;
-    text-align: center;
+  .Label::before,
+  .Label::after {
+    content: "";
+    width: 15px;
+    height: 6px;
+    border-top: 2px solid #335C93;
+    position: absolute;
+    top: 47%;
+    right: 20px;
+  }
+  .Label::after {
+    transform: rotate(90deg);
+    right: 23px;
+    top: 42%;
+  }
+
+  .Label.active {
     background-color: #335C93;
     color: #fff;
-    border-radius: 50%;
-    margin-right: 12px;
   }
 
-  .Label,
-  .content {
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    transform: translateZ(0);
-    transition: all 0.3s;
-  }
-  .content {
-    display: flex;
-    align-items: center;
-    height: 0;
-    background-color: #fff;
-    margin-bottom:10px;
-    padding:0 20px;
-    overflow: hidden;
-    filter: drop-shadow(2px 2px 2px #4e4e4e);
-    p {
-      font-size: 16px;
-    }
-  }
-  &-A {
+  &-Q {
     width: 36px;
     height: 36px;
     padding: 0 13px;
@@ -2394,17 +2438,76 @@ main {
     align-items: center;
     margin-right: 12px;
   }
-  .toggle:checked + .Label + .content {	/*開閉時*/
-    height: auto;
-    padding:16px ;
-    transition: all .3s;
+
+  .Label,
+  .content {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    transition: all 0.3s;
   }
+
+  .content {
+    display: flex;
+    align-items: center;
+    height: 0;
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 0 20px;
+    overflow: hidden;
+    filter: drop-shadow(2px 2px 2px #4e4e4e);
+  }
+
+  &-A {
+    width: 36px;
+    height: 36px;
+    padding: 0 13px;
+    border-radius: 50px;
+    background-color: #335C93;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 12px;
+    &-text {
+      font-size: 16px;
+      background: linear-gradient(90deg, #1274CE, #335C93);
+      -webkit-background-clip: text;
+      color: transparent;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  .toggle:checked + .Label + .content {
+      height: auto;
+      padding: 16px;
+      transition: all 0.3s;
+  }
+
   .toggle:checked + .Label::after {
     transform: rotate(0deg) !important;
   }
+
   .toggle:checked + .Label::before {
     border-top: none;
   }
+
+  .toggle:checked + .Label {
+    background-color: #335C93;
+    color: #fff;
+  }
+  .toggle:checked + .Label .qa-Q {
+    background-color: #fff;
+    color: #335C93;
+  }
+  .toggle:checked + .Label::after {
+    background-color: #fff;
+  }
+
+  .toggle:not(:checked) + .Label {
+    background-color: #fff;
+  }
+
   @media screen and (min-width: 429px) {
     &-top {
       background-size: 100vw;
@@ -2430,7 +2533,7 @@ main {
     }
     .Label {
       font-size: 4.2vw;
-      padding: 1em 2rem 1rem 1rem;
+      padding: 1em 4rem 1rem 1rem;
       &::before,&::after{
         width: 4vw;
         height: 1.6vw;
@@ -2458,6 +2561,9 @@ main {
       padding: 0 3.4vw;
       border-radius: 13vw;
       margin-right: 3.2vw;
+      &-text {
+        font-size: 4.2vw;
+      }
     }
     .toggle:checked + .Label + .content {	/*開閉時*/
       padding: 4.2vw;
@@ -2516,6 +2622,9 @@ main {
       padding: 0 26px;
       border-radius: 100px;
       margin-right: 24px;
+      &-text {
+        font-size: 32px;
+      }
     }
     .toggle:checked + .Label + .content {	/*開閉時*/
       padding: 32px;
