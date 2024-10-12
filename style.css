@@ -325,6 +325,14 @@ main {
   }
 }
 
+.sticky-trigger {
+  position: fixed;
+  z-index: 1;
+  transform: translateX(4%);
+  bottom: 20px;
+  text-align: center;
+}
+
 .campaign {
   content: "";
   display: inline-block;
@@ -426,7 +434,7 @@ main {
     font-size: 5.3vw;
     width: 86vw;
     border-radius: 13vw;
-    margin: 3.4vw auto 6.4;
+    margin: 3.4vw auto 6.4vw;
   }
   .campaign-button p::after {
     width: 8vw;
