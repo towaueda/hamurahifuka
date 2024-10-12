@@ -114,7 +114,7 @@ main {
     display: inline-block;
     width: 13px;
     height: 21px;
-    background-image: url('/img/head-speech.png');
+    background-image: url('./img/head-speech.png');
     background-position: center;
     background-size: contain;
     position: absolute;
@@ -166,7 +166,7 @@ main {
   display: flex;
   width: 100%;
   height: 100%;
-  background-image: url('/img/mesogan-bg.jpg');
+  background-image: url('./img/mesogan-bg.jpg');
   background-position: center;
   background-size: contain;
   background-size: 750px;
@@ -197,7 +197,7 @@ main {
       display: inline-block;
       width: 178px;
       height: 1px;
-      background-image: url('/img/mesogan-border.png');
+      background-image: url('./img/mesogan-border.png');
       background-position: center;
       background-size: contain;
       background-repeat: no-repeat;
@@ -337,7 +337,7 @@ main {
   width: auto;
   height: auto;
   border: 3px solid #925009;
-  background-image: url('/img/campaign-bg.png');
+  background-image: url('./img/campaign-bg.png');
   background-position: center;
   background-size: contain;
   text-align: center;
@@ -395,7 +395,7 @@ main {
         display: inline-block;
         width: 30px;
         height: 30px;
-        background-image: url('/img/campaign-arrow.png');
+        background-image: url('./img/campaign-arrow.png');
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
@@ -481,7 +481,7 @@ main {
 // detail
 .detail {
   text-align: center;
-  background-image: url('/img/detail-bg.png');
+  background-image: url('./img/detail-bg.png');
   background-position: center;
   background-size: contain;
   padding: 40px 16px;
@@ -497,7 +497,7 @@ main {
       display: inline-block;
       width: 100%;
       height: 30px;
-      background-image: url('/img/megason_under.png');
+      background-image: url('./img/megason_under.png');
       background-position: center;
       background-size: contain;
       background-repeat: no-repeat;
@@ -524,7 +524,7 @@ main {
       display: inline-block;
       width: 26px;
       height: 26px;
-      background-image: url('/img/Polygon.png');
+      background-image: url('./img/Polygon.png');
       background-position: center;
       background-size: contain;
       background-repeat: no-repeat;
@@ -548,7 +548,7 @@ main {
       display: inline-block;
       width: 26px;
       height: 26px;
-      background-image: url('/img/Polygon.png');
+      background-image: url('./img/Polygon.png');
       background-position: center;
       background-size: contain;
       background-repeat: no-repeat;
@@ -661,7 +661,7 @@ main {
     color: #5F5D5D;
     font-size: 18px;
     content: "";
-    background-image: url('/img/trouble-head.png');
+    background-image: url('./img/trouble-head.png');
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -685,7 +685,7 @@ main {
         display: inline-block;
         width: 34px;
         height: 34px;
-        background-image: url('/img/Danger.png');
+        background-image: url('./img/Danger.png');
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
@@ -703,7 +703,7 @@ main {
         display: inline-block;
         width: 84px;
         height: 9px;
-        background-image: url('/img/Concerns_under.png');
+        background-image: url('./img/Concerns_under.png');
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
@@ -714,7 +714,7 @@ main {
   }
   &-wrapper {
     content: "";
-    background-image: url('/img/trouble-wrapper.png');
+    background-image: url('./img/trouble-wrapper.png');
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -741,7 +741,7 @@ main {
       display: inline-block;
       width: 28px;
       height: 28px;
-      background-image: url('/img/Checkbox.png');
+      background-image: url('./img/Checkbox.png');
       background-position: center;
       background-size: contain;
       background-repeat: no-repeat;
@@ -882,7 +882,7 @@ main {
     }
 
     &-box {
-      background-image: url('/img/Solution.png');
+      background-image: url('./img/Solution.png');
       background-position: center;
       background-size: contain;
       background-repeat: no-repeat;
@@ -924,7 +924,7 @@ main {
       display: inline-block;
       width: 142px;
       height: 147px;
-      background-image: url('/img/solution-oil.png');
+      background-image: url('./img/solution-oil.png');
       background-position: center;
       background-size: contain;
       background-repeat: no-repeat;
@@ -985,27 +985,27 @@ main {
     }
     &-01 {
       &::after {
-        background-image: url('/img/solution-detail.png');
+        background-image: url('./img/solution-detail.png');
       }
     }
     &-02 {
       &::after {
-        background-image: url('/img/solution-beautiful.png');
+        background-image: url('./img/solution-beautiful.png');
       }
     }
     &-03 {
       &::after {
-        background-image: url('/img/solution-lasting.png');
+        background-image: url('./img/solution-lasting.png');
       }
     }
     &-04 {
       &::after {
-        background-image: url('/img/solution-personal.png');
+        background-image: url('./img/solution-personal.png');
       }
     }
     &-05 {
       &::after {
-        background-image: url('/img/solution-painless.png');
+        background-image: url('./img/solution-painless.png');
       }
     }
     h3 {
@@ -1159,7 +1159,7 @@ main {
 .compare {
   width: 375px;
   height: auto;
-  background-image: url('/img/compare-top.png');
+  background-image: url('./img/compare-top.png');
   background-size: contain;
   background-repeat: no-repeat;
   &-top {
@@ -1171,7 +1171,7 @@ main {
       display: inline-block;
       width: 168px;
       height: 186px;
-      background-image: url('/img/magnifying-glass.png');
+      background-image: url('./img/magnifying-glass.png');
       background-position: center;
       background-size: contain;
       background-repeat: no-repeat;
@@ -1295,7 +1295,7 @@ main {
         display: inline-block;
         width: 180px;
         height: 45px;
-        background-image: url('/img/Subtract.png');
+        background-image: url('./img/Subtract.png');
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
@@ -1891,7 +1891,7 @@ main {
 
 // details
 .details {
-  background-image: url('/img/details.png');
+  background-image: url('./img/details.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-size: 375px;
@@ -1924,52 +1924,52 @@ main {
     }
     &-01 {
       &::before {
-        background-image: url('/img/bright-stars.svg');
+        background-image: url('./img/bright-stars.svg');
       }
     }
     &-02 {
       &::before {
-        background-image: url('/img/Bath-tub.svg');
+        background-image: url('./img/Bath-tub.svg');
       }
     }
     &-03 {
       &::before {
-        background-image: url('/img/Calendar-squares.svg');
+        background-image: url('./img/Calendar-squares.svg');
       }
     }
     &-04 {
       &::before {
-        background-image: url('/img/Thunder.svg');
+        background-image: url('./img/Thunder.svg');
       }
     }
     &-05 {
       &::before {
-        background-image: url('/img/Injecting-Syringe.svg');
+        background-image: url('./img/Injecting-Syringe.svg');
       }
     }
     &-06 {
       &::before {
-        background-image: url('/img/Recovery.svg');
+        background-image: url('./img/Recovery.svg');
       }
     }
     &-07 {
       &::before {
-        background-image: url('/img/Makeup-palette.svg');
+        background-image: url('./img/Makeup-palette.svg');
       }
     }
     &-08 {
       &::before {
-        background-image: url('/img/Washing.svg');
+        background-image: url('./img/Washing.svg');
       }
     }
     &-09 {
       &::before {
-        background-image: url('/img/Shower-head.svg');
+        background-image: url('./img/Shower-head.svg');
       }
     }
     &-10 {
       &::before {
-        background-image: url('/img/Bath-tub.svg');
+        background-image: url('./img/Bath-tub.svg');
       }
     }
     &-11 {
@@ -1979,7 +1979,7 @@ main {
     }
     &-12 {
       &::before {
-        background-image: url('/img/Caution sign.svg');
+        background-image: url('./img/Caution sign.svg');
       }
     }
     p {
@@ -2176,7 +2176,7 @@ main {
 
 // mechanism
 .mechanism {
-  background-image: url('/img/mechanism-bg.png');
+  background-image: url('./img/mechanism-bg.png');
   background-size: contain;
   padding: 56px 15px;
   background-position: top;
@@ -2193,7 +2193,7 @@ main {
       display: inline-block;
       width: 263px;
       height: 76px;
-      background-image: url('/img/mechanism.png');
+      background-image: url('./img/mechanism.png');
       background-position: center;
       background-repeat: no-repeat;
       position: absolute;
@@ -2351,7 +2351,7 @@ main {
 // qa
 .qa {
   &-top {
-    background-image: url('/img/qa-top-bg.png');
+    background-image: url('./img/qa-top-bg.png');
     background-size: contain;
     background-position: top;
     background-repeat: no-repeat;
@@ -2362,7 +2362,7 @@ main {
       display: inline-block;
       width: 104px;
       height: 75px;
-      background-image: url('/img/qa-gun.png');
+      background-image: url('./img/qa-gun.png');
       background-position: center;
       background-repeat: no-repeat;
       background-size: 104px;
