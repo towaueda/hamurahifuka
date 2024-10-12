@@ -2327,16 +2327,15 @@ main {
   display: none;
 }
 .qa .Label {
-  font-size: 16px;
-  padding: 1em 2rem 1rem 1rem;
   display: flex;
   align-items: center;
-  color: #335C93;
-  background: #fff;
-  filter: drop-shadow(1px 1px 1px #4e4e4e);
+  padding: 1em 2rem 1rem 1rem;
   position: relative;
-  cursor: pointer;
+  background-color: #fff;
+  color: #335C93;
   transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
+  filter: drop-shadow(1px 1px 1px #4e4e4e);
 }
 .qa .Label::before,
 .qa .Label::after {
@@ -2360,14 +2359,16 @@ main {
 .qa-Q {
   width: 36px;
   height: 36px;
-  padding: 0;
-  border-radius: 50px;
+  border-radius: 50%;
   background-color: #335C93;
   color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 16px;
+  font-weight: bold;
   margin-right: 12px;
+  flex-shrink: 0;
 }
 .qa .Label,
 .qa .content {
@@ -2388,14 +2389,16 @@ main {
 .qa-A {
   width: 36px;
   height: 36px;
-  padding: 0 13px;
-  border-radius: 50px;
-  background-color: #335C93;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 12px;
+  border-radius: 50%; /* Make it a perfect circle */
+  background-color: #335C93; /* Background color */
+  color: #fff; /* Text color */
+  display: flex; /* Flexbox for centering */
+  justify-content: center; /* Horizontal centering */
+  align-items: center; /* Vertical centering */
+  font-size: 16px; /* Font size */
+  font-weight: bold; /* Font weight */
+  margin-right: 12px; /* Spacing between the Q and the label text */
+  flex-shrink: 0; /* 他の要素との間隔 */
 }
 .qa .toggle:checked + .Label + .content {
   height: auto;
@@ -2441,6 +2444,9 @@ main {
   .qa-ttl {
     font-size: 7vw;
     padding-bottom: 5.3vw;
+  }
+  .qa .qa-box {
+    padding: 64px 32px;
   }
   .qa-box {
     padding: 8.5vw 4.2vw;
