@@ -1656,6 +1656,7 @@ main {
   -webkit-text-fill-color: transparent;
   justify-content: center;
   z-index: 5;
+  padding-top: 10px;
 }
 .flow-step::before {
   content: "簡単";
@@ -1667,7 +1668,7 @@ main {
   font-size: 18px;
   position: absolute;
   left: 17%;
-  top: 45%;
+  top: 42%;
 }
 .flow-step-number {
   font-size: 67px;
@@ -1912,7 +1913,7 @@ main {
   background-image: url("./img/Bath-tub.svg");
 }
 .details-contents-11::before {
-  background-image: url("/img/Cold-sore.svg");
+  background-image: url("./img/Cold-sore.svg");
 }
 .details-contents-12::before {
   background-image: url("./img/Caution-sign.svg");
@@ -2350,7 +2351,7 @@ main {
 .qa .Label::after {
   transform: rotate(90deg);
   right: 23px;
-  top: 42%;
+  top: 43%;
 }
 .qa .Label.active {
   background-color: #335C93;
@@ -2395,13 +2396,6 @@ main {
   justify-content: center;
   align-items: center;
   margin-right: 12px;
-}
-.qa-A-text {
-  font-size: 16px;
-  background: linear-gradient(90deg, #1274CE, #335C93);
-  -webkit-background-clip: text;
-  color: transparent;
-  -webkit-text-fill-color: transparent;
 }
 .qa .toggle:checked + .Label + .content {
   height: auto;
