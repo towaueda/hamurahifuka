@@ -3,7 +3,10 @@ body {
   // max-width: px;
   margin: 0 auto;
   @media screen and (min-width: 429px) {
-    background-color: #fff;
+    background-image: url(./img/mesogan-pc-bg.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 100vw;
   }
 }
 // p {
@@ -101,6 +104,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: inset 0 5px #5F5D5D 0.5;
   background: linear-gradient(90deg, #1274CE, #335C93);
   color: #fff;
   p {
@@ -178,10 +182,11 @@ main {
     color: #5F5D5D;
     font-size: 28px;
     font-weight: bold;
+    line-height: 1.1;
   }
   &-name {
     font-weight: bold;
-    font-size: 46px;
+    font-size: 36px;
     letter-spacing: -12px;
     background: linear-gradient(90deg, #1274CE, #335C93);
     -webkit-background-clip: text;
@@ -230,8 +235,11 @@ main {
       font-size: 5.6vw;
     }
     &-name {
-      font-size: 12vw;
+      font-size: 10vw;
       padding-bottom: 1.6vw;
+      img {
+        width: 48vw;
+      }
     }
     &-text {
       font-size: 3.2vw;
@@ -258,6 +266,9 @@ main {
     &-name {
       font-size: 92px;
       padding-bottom: 1.6vw;
+      img {
+        width: 366px;
+      }
     }
     &-text {
       font-size: 32px;
@@ -307,6 +318,7 @@ main {
   p {
     font-size: 12px;
     padding: 9px 12px;
+    text-shadow: 1px 1px 2px #00000080;
     border-right: 1px solid #fff;
     &:last-child {
       border-right: none;
@@ -333,9 +345,16 @@ main {
 .sticky-trigger {
   position:fixed;
   z-index:1;
-  transform: translateX(4%);
   bottom:20px;
   text-align: center;
+  background-color: #fff;
+  margin: 0 calc(50% - 50vw);
+  width: 100vw;
+  @media screen and (min-width: 750px) {
+    margin: 0;
+    width: 100vw;
+    max-width: 750px;
+  }
 }
 
 // campaign
@@ -344,12 +363,13 @@ main {
   display: inline-block;
   width: auto;
   height: auto;
-  border: 3px solid #925009;
   background-image: url('./img/campaign-bg.png');
   background-position: center;
   background-size: contain;
+  background-repeat: no-repeat;
+  background-size: 375px;
   text-align: center;
-  padding: 24px 6px;
+  padding: 38px 0;
   &-top-img {
     width: 345px;
   }
@@ -360,6 +380,7 @@ main {
     color: #99A9AC;
     font-size: 38px;
     text-align: center;
+    opacity: 0.5;
   }
   &-reservation {
     color: #5F5D5D;
@@ -417,9 +438,11 @@ main {
     font-size: 12px;
     font-weight: bold;
     color: #5F5D5D;
+    padding-left: 9px;
   }
   @media screen and (min-width: 429px) {
-    padding: 6.4vw 1.6vw;
+    background-size: 100vw;
+    padding: 10vw 0;
     &-top-img {
       width: 92vw;
     }
@@ -452,7 +475,8 @@ main {
     }
   }
   @media screen and (min-width: 750px) {
-    padding: 48px 12px;
+    background-size: 750px;
+    padding: 76px 0;
     &-top-img {
       width: 690px;
     }
@@ -472,6 +496,9 @@ main {
         width: 650px;
         border-radius: 100px;
         margin: 26px auto 48px;
+        &:hover {
+          box-shadow: 0px 0 0 10px #F68E2F;
+        }
         &::after {
           width: 60px;
           height: 60px;
@@ -718,6 +745,19 @@ main {
         position: absolute;
         bottom: 0;
       }
+      &::after {
+        content: "";
+        display: inline-block;
+        width: 12px;
+        height: 15px;
+        background-image: url('./img/worries.png');
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: -10px;
+        right: 0;
+      }
     }
   }
   &-wrapper {
@@ -867,6 +907,7 @@ main {
 .solution {
   overflow-x: hidden;
   &-top{
+    font-size: 24px;
     background-color: #F68E2F;
     width: 100px;
     height: 100px;
@@ -1018,9 +1059,14 @@ main {
       }
     }
     h3 {
-      color: #335C93;
       font-size: 36px;
+      font-family: serif;
+      font-style: italic;
       text-align: center;
+      background: linear-gradient(90deg, #1274CE, #335C93);
+      -webkit-background-clip: text;
+      color: transparent;
+      -webkit-text-fill-color: transparent;
     }
     img {
       padding: 16px 0;
@@ -1034,6 +1080,7 @@ main {
     &-text {
       text-align: left;
       font-size: 15px;
+      text-align:justify;
     }
   }
   @media screen and (min-width: 429px) {
@@ -1196,9 +1243,6 @@ main {
     }
     &-bubble {
       width: 145px;
-      font-size: 14px;
-      color: #fff;
-      background-color: #335C93;
       margin: 0 auto;
     }
     &-ttl {
@@ -1227,6 +1271,9 @@ main {
       &-bubble {
         width: 38.6vw;
         font-size: 3.7vw;
+        img {
+          width: 38.6vw;
+        }
       }
       &-ttl {
         font-size: 5.6vw;
@@ -1252,6 +1299,9 @@ main {
       &-bubble {
         width: 290px;
         font-size: 28px;
+        img {
+          width: 290px;
+        }
       }
       &-ttl {
         font-size: 42px;
@@ -1396,9 +1446,16 @@ main {
       text-align: center;
       margin:0 2%;
       display:inline-block;
-      border: 1px solid #335C93;
-      background-color: #fff;
-      transform:skewX(150deg);
+      &::before {
+        transform: skewX(-30deg);
+        content: "";
+        width: 80px;
+        position: absolute;
+        top: 0; bottom: 0; left: 3px;
+        z-index: -1;
+        border: 1px solid #335C93;
+        background: #fff;
+      }
     }
   }
   &-special-offer {
@@ -1408,8 +1465,15 @@ main {
     margin:0 2%;
     display:inline-block;
     color: #fff;
-    background: linear-gradient(90deg, #1274CE, #335C93);
-    transform:skewX(150deg);
+    &::before {
+      transform: skewX(-30deg);
+      content: "";
+      width: 80px;
+      position: absolute;
+      top: 0; bottom: 0; right: 3px;
+      z-index: -1;
+      background: linear-gradient(90deg, #1274CE, #335C93);
+    }
   }
   @media screen and (min-width: 429px) {
     &-top {
@@ -1494,12 +1558,18 @@ main {
       &-time {
         width: 23vw;
         font-size: 4vw;
+        &::before {
+          width: 21vw;
+        }  
       }
     }
     &-special-offer {
       width: 23vw;
       font-size: 4vw;
       margin:0 2%;
+      &::before {
+        width: 21vw;
+      }
     }
   }
   @media screen and (min-width: 750px) {
@@ -1586,12 +1656,18 @@ main {
       &-time {
         width: 176px;
         font-size: 30px;
+        &::before {
+          width: 160px;
+        }  
       }
     }
     &-special-offer {
       width: 176px;
       font-size: 30px;
       margin:0 2%;
+      &::before {
+        width: 160px;
+      }
     }
   }
 }
@@ -1608,6 +1684,7 @@ main {
     text-align: center;
     font-size: 24px;
     font-weight: bold;
+    line-height: 1.3;
     color: #5F5D5D;
     padding-top: 8px;
     padding-bottom: 32px;
@@ -1619,6 +1696,7 @@ main {
     font-size: 16px;
     font-weight: bold;
     text-align: left;
+    text-align:justify;
     color: #5F5D5D;
     padding-top: 24px;
     span {
@@ -1713,6 +1791,7 @@ main {
 
     &-number {
       font-size: 67px;
+      font-style: italic;
       background: linear-gradient(90deg, #1274CE, #335C93);
       -webkit-background-clip: text;
       color: transparent;
@@ -1720,6 +1799,7 @@ main {
 
       span {
         font-size: 87px;
+        font-style: italic;
         background: linear-gradient(90deg, #1274CE, #335C93);
         -webkit-background-clip: text;
         color: transparent;
@@ -1761,11 +1841,13 @@ main {
       }
       ruby {
         font-size: 30px;
+        font-style: italic;
         color: #5F5D5D;
         padding-right: 16px;
       }
       rt {
         font-size: 10px;
+        letter-spacing: -0.5px;
       }
       p {
         background: linear-gradient(90deg, #1274CE, #335C93);
@@ -1905,7 +1987,7 @@ main {
   background-size: contain;
   background-repeat: no-repeat;
   background-size: 375px;
-  padding: 38px 0;
+  padding: 60px 0 38px 0;
   h3 {
     text-align: center;
     font-size: 24px;
@@ -1939,7 +2021,7 @@ main {
     }
     &-02 {
       &::before {
-        background-image: url('./img/Bath-tub.svg');
+        background-image: url('./img/Back-time.svg');
       }
     }
     &-03 {
@@ -1993,9 +2075,9 @@ main {
       }
     }
     p {
-      font-size: 14px;
+      font-size: 16px;
       text-align: left;
-      padding: 4px 0 4px 27px;
+      padding: 4px 0 4px 30px;
     }
   }
   &-content-text {
@@ -2019,7 +2101,7 @@ main {
       }
       p {
         font-size: 4.2vw;
-        padding: 1vw 0 1vw 7vw;
+        padding: 1vw 0 1vw 8vw;
       }
     }
     &-content-text {
@@ -2044,7 +2126,7 @@ main {
       }
       p {
         font-size: 32px;
-        padding: 8px 0 8px 54px;
+        padding: 8px 0 8px 60px;
       }
     }
     &-content-text {
@@ -2243,7 +2325,9 @@ main {
     backface-visibility: hidden;
     transform: translateZ(0);
     transition: all 0.3s;
-
+  }
+  .Label span{
+   font-size: 25px;
   }
   .content {		/*本文*/
     height: 0;
@@ -2269,6 +2353,7 @@ main {
     box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .5);
     padding:20px ;
     transition: all .3s;
+    text-align: justify;
   }
   .toggle:checked + .Label::before {
     transform: rotate(-45deg) !important;
@@ -2439,7 +2524,7 @@ main {
     width: 36px;
     height: 36px;
     border-radius: 50%;
-    background-color: #335C93;
+    background: linear-gradient(90deg, #1274CE, #335C93);
     color: #fff;
     display: flex;
     justify-content: center;
@@ -2466,7 +2551,7 @@ main {
     margin-bottom: 10px;
     padding: 0 20px;
     overflow: hidden;
-    filter: drop-shadow(2px 2px 2px #4e4e4e);
+    filter: drop-shadow(1px 1px 1px #4e4e4e);
   }
 
   &-A {
@@ -2510,11 +2595,12 @@ main {
     color: #fff;
   }
   .toggle:checked + .Label .qa-Q {
-    background-color: #fff;
+    background: #fff;
     color: #335C93;
   }
   .toggle:checked + .Label::after {
     background-color: #fff;
+    height: 3px;
   }
 
   .toggle:not(:checked) + .Label {
