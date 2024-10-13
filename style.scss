@@ -76,23 +76,6 @@ footer {
     width: 78px;
     font-size: 12px;
   }
-  @media screen and (min-width: 429px) {
-    padding-bottom: 35vw;
-    & img {
-      width: 62px;
-      height: auto;
-    }  
-    .footer-first-text {
-      font-size: 24px;
-    }
-    .footer-last-text {
-      font-size: 32px;
-    }
-    .footer-right {
-      width: 25%;
-      font-size: 24px;
-    }
-  }
   @media screen and (min-width: 750px) {
     padding-bottom: calc(15px + 222px);
     & img {
@@ -108,6 +91,23 @@ footer {
     .footer-right {
       width: 25%;
       font-size: 24px;
+    }
+  }
+  @media screen and (min-width: 429px) {
+    padding-bottom: 35vw;
+    & img {
+      width: 8.2vw;
+      height: auto;
+    }  
+    .footer-first-text {
+      font-size: 3.2vw;
+    }
+    .footer-last-text {
+      font-size: 4.2vw;
+    }
+    .footer-right {
+      width: 25%;
+      font-size: 3.2vw;
     }
   }
 }
