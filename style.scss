@@ -150,6 +150,11 @@ main {
   & ::after {
     right: -14px;
   }
+  @media screen and (max-width: 375px) {
+    p {
+      font-size: 14px;
+    }
+  }
   @media screen and (min-width: 429px) {
     p {
       font-size: 4.2vw;
@@ -235,9 +240,6 @@ main {
     &::after {
       bottom: 0;
     }
-    &::before {
-
-    }
   }
   &-right {
     width: 50%;
@@ -248,6 +250,19 @@ main {
       height: auto;
       right: 0;
       bottom: 0;
+    }
+  }
+  @media screen and (max-width: 375px) {
+    &-ttl {
+      font-size: 26px;
+    }  
+    &-name {
+      img {
+        width: 160px;
+      }
+    }
+    &-text {
+      font-size: 12px;
     }
   }
   @media screen and (min-width: 429px) {
@@ -318,6 +333,14 @@ main {
     font-size: 10px;
     font-weight: bold;
   }
+  @media screen and (max-width: 375px) {
+    p {
+      font-size: 9px;
+    }
+    small {
+      font-size: 8px;
+    }
+  }
   @media screen and (min-width: 429px) {
     small {
       font-size: 2.6vw;
@@ -346,6 +369,9 @@ main {
     &:last-child {
       border-right: none;
     }
+  }
+  @media screen and (max-width: 375px) {
+
   }
   @media screen and (min-width: 429px) {
     background-image: linear-gradient(-45deg, #fff 3.3vw, transparent 0), linear-gradient(135deg, #fff 3.3vw, transparent 0);
@@ -380,7 +406,7 @@ main {
   }
 }
 .wrapper {
-  background: linear-gradient(30deg, #925009, #E9C865);
+  background: linear-gradient(45deg, #925009,#995A10,#D2A84D,#E9C865,#D3AA4E,#B78330,#A2671A,#96560D,#925009 ,#95540C,#9F6116,#AF7827,#C5973F,#E2BF5E,#E9C865,#E9C865,#925009);
   padding: 2px;
 }
 // campaign
@@ -445,6 +471,20 @@ main {
     font-weight: bold;
     color: #5F5D5D;
     padding-left: 9px;
+  }
+  @media screen and (max-width: 375px) {
+    background-size: 140vw;
+    &-top-img {
+      width: 315px;
+    }
+    &-discount {
+      width: 270px;
+    }
+    &-button {
+      img {
+        width: 310px;
+      }
+    }
   }
   @media screen and (min-width: 429px) {
     background-size: 132vw;
@@ -550,12 +590,12 @@ main {
       position: absolute;
     }
     &::after {
-      bottom: 0;
+      bottom: -1px;
       transform: rotate(-90deg);
-
     }
     &::before {
       top: 0;
+      left: -1px;
     }
   }
   &-Content-Title {
@@ -575,10 +615,11 @@ main {
     }
     &::after {
       right: 0;
+      top: -1px;
       transform: rotate(90deg);
     }
     &::before {
-      right: 0;
+      right: -1px;
       transform: rotate(180deg);
       bottom: 0;
     }
@@ -590,6 +631,9 @@ main {
         color: #F68E2F;
       }
     }
+  }
+  @media screen and (max-width: 375px) {
+
   }
   @media screen and (min-width: 429px) {
     padding: 10vw 4.2vw;
@@ -786,6 +830,11 @@ main {
     font-weight: bold;
     text-align: center;
     padding-top: 49px;
+  }
+  @media screen and (max-width: 375px) {
+    &-main {
+      width: 295px;
+    }
   }
   @media screen and (min-width: 429px) {
     &-head {
@@ -1067,6 +1116,19 @@ main {
       text-align:justify;
     }
   }
+  @media screen and (max-width: 375px) {
+    &-top{  
+      &-box {
+        background-size: 134vw;
+        &::before {
+          content: "";
+          /* width: 100%; */
+          border-left: 160px solid transparent;
+          border-right: 160px solid transparent;
+        }
+      }
+    }
+  }
   @media screen and (min-width: 429px) {
     &-top{
       font-size: 6.1vw;
@@ -1241,6 +1303,9 @@ main {
   }
   &-img {
     width: 100vw;
+  }
+  @media screen and (max-width: 375px) {
+
   }
   @media screen and (min-width: 429px) {
     width: 100vw;
@@ -1459,6 +1524,47 @@ main {
       top: 0; bottom: 0; right: 3px;
       z-index: -1;
       background: linear-gradient(90deg, #1274CE, #335C93);
+    }
+  }
+  @media screen and (max-width: 375px) {
+    &-box-img {
+      width: 296px;
+    }
+    &-box {
+      padding: 0 12px 32px;
+      h3 {
+        &::before {
+          left: 20%;
+        }
+      }
+      &01 {
+        img {
+          height: 13px;
+          padding: 0;
+        }
+      }
+      &-off {
+        font-size: 12px;
+      }
+      &-number {
+        font-size: 38px;
+      }
+      &-1time {
+        margin-bottom: 8px;
+        &-text {
+          padding: 0 4px;
+          font-size: 12px;
+        }
+        &-original {
+          font-size: 23px;
+          &-discount {
+            font-size: 30px;
+          }
+        }
+        img {
+          height: 13px;
+        }
+      }
     }
   }
   @media screen and (min-width: 429px) {
@@ -1689,6 +1795,9 @@ main {
       color: #335C93;
     }
   }
+  @media screen and (max-width: 375px) {
+
+  }
   @media screen and (min-width: 429px) {
     padding: 8.5vw 3.7vw;
     &-img01 {
@@ -1849,6 +1958,19 @@ main {
     }
     p {
       text-align: left;
+    }
+  }
+  @media screen and (max-width: 375px) {
+    &-step01 {
+      &-top {
+        p {
+          font-size: 20px;
+        }
+        &-text {
+          font-size: 14px;
+        }
+      }
+
     }
   }
   @media screen and (min-width: 429px) {
@@ -2070,6 +2192,9 @@ main {
     font-size: 14px;
     padding-left: 27px;
   }
+  @media screen and (max-width: 375px) {
+
+  }
   @media screen and (min-width: 429px) {
     background-size: 100vw;
     padding: 10vw 0;
@@ -2125,6 +2250,7 @@ main {
 // access
 .access {
   padding: 40px 14px;
+  text-align: center;
   h3 {
     text-align: center;
     font-size: 24px;
@@ -2163,14 +2289,18 @@ main {
     th {
       padding: 16px 0;
     }
-    td {
-    }
   }
   &-first {
     width: 82px;
     font-weight: bold;
     padding-left: 10px !important;
     padding-right: 18px !important;
+  }
+  @media screen and (max-width: 375px) {
+    &-img {
+      width: 292px;
+      padding: 16px 0 14px;
+    }  
   }
   @media screen and (min-width: 429px) {
     padding: 10vw 3.7vw;
@@ -2343,6 +2473,13 @@ main {
   }
   .toggle:checked + .Label::before {
     transform: rotate(-45deg) !important;
+  }
+  @media screen and (max-width: 375px) {
+    h3 {
+      &::before {
+        left: 5%;
+      }
+    }
   }
   @media screen and (min-width: 429px) {
     padding: 15vw 4vw;
@@ -2592,7 +2729,14 @@ main {
   .toggle:not(:checked) + .Label {
     background-color: #fff;
   }
-
+  @media screen and (max-width: 375px) {
+    &-top {
+      &::after {
+        width: 88px;
+        height: 60px;
+      }
+    }
+  }
   @media screen and (min-width: 429px) {
     &-top {
       background-size: 100vw;

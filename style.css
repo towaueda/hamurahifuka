@@ -151,6 +151,11 @@ main {
 .header-under ::after {
   right: -14px;
 }
+@media screen and (max-width: 375px) {
+  .header-under p {
+    font-size: 14px;
+  }
+}
 @media screen and (min-width: 429px) {
   .header-under p {
     font-size: 4.2vw;
@@ -247,6 +252,17 @@ main {
   right: 0;
   bottom: 0;
 }
+@media screen and (max-width: 375px) {
+  .mesogan-ttl {
+    font-size: 26px;
+  }
+  .mesogan-name img {
+    width: 160px;
+  }
+  .mesogan-text {
+    font-size: 12px;
+  }
+}
 @media screen and (min-width: 429px) {
   .mesogan-left {
     padding: 5.6vw 0 10vw 2vw;
@@ -313,6 +329,14 @@ main {
 .treatment-area small {
   font-size: 10px;
   font-weight: bold;
+}
+@media screen and (max-width: 375px) {
+  .treatment-area p {
+    font-size: 9px;
+  }
+  .treatment-area small {
+    font-size: 8px;
+  }
 }
 @media screen and (min-width: 429px) {
   .treatment-area small {
@@ -382,7 +406,7 @@ main {
 }
 
 .wrapper {
-  background: linear-gradient(30deg, #925009, #E9C865);
+  background: linear-gradient(45deg, #925009, #995A10, #D2A84D, #E9C865, #D3AA4E, #B78330, #A2671A, #96560D, #925009, #95540C, #9F6116, #AF7827, #C5973F, #E2BF5E, #E9C865, #E9C865, #925009);
   padding: 2px;
 }
 
@@ -446,6 +470,20 @@ main {
   font-weight: bold;
   color: #5F5D5D;
   padding-left: 9px;
+}
+@media screen and (max-width: 375px) {
+  .campaign {
+    background-size: 140vw;
+  }
+  .campaign-top-img {
+    width: 315px;
+  }
+  .campaign-discount {
+    width: 270px;
+  }
+  .campaign-button img {
+    width: 310px;
+  }
 }
 @media screen and (min-width: 429px) {
   .campaign {
@@ -552,11 +590,12 @@ main {
   position: absolute;
 }
 .detail-Content::after {
-  bottom: 0;
+  bottom: -1px;
   transform: rotate(-90deg);
 }
 .detail-Content::before {
   top: 0;
+  left: -1px;
 }
 .detail-Content-Title {
   display: flex;
@@ -576,10 +615,11 @@ main {
 }
 .detail-Content-Title::after {
   right: 0;
+  top: -1px;
   transform: rotate(90deg);
 }
 .detail-Content-Title::before {
-  right: 0;
+  right: -1px;
   transform: rotate(180deg);
   bottom: 0;
 }
@@ -789,6 +829,11 @@ main {
   font-weight: bold;
   text-align: center;
   padding-top: 49px;
+}
+@media screen and (max-width: 375px) {
+  .trouble-main {
+    width: 295px;
+  }
 }
 @media screen and (min-width: 429px) {
   .trouble-head {
@@ -1053,6 +1098,17 @@ main {
   text-align: left;
   font-size: 15px;
   text-align: justify;
+}
+@media screen and (max-width: 375px) {
+  .solution-top-box {
+    background-size: 134vw;
+  }
+  .solution-top-box::before {
+    content: "";
+    /* width: 100%; */
+    border-left: 160px solid transparent;
+    border-right: 160px solid transparent;
+  }
 }
 @media screen and (min-width: 429px) {
   .solution-top {
@@ -1449,6 +1505,43 @@ main {
   z-index: -1;
   background: linear-gradient(90deg, #1274CE, #335C93);
 }
+@media screen and (max-width: 375px) {
+  .price-box-img {
+    width: 296px;
+  }
+  .price-box {
+    padding: 0 12px 32px;
+  }
+  .price-box h3::before {
+    left: 20%;
+  }
+  .price-box01 img {
+    height: 13px;
+    padding: 0;
+  }
+  .price-box-off {
+    font-size: 12px;
+  }
+  .price-box-number {
+    font-size: 38px;
+  }
+  .price-box-1time {
+    margin-bottom: 8px;
+  }
+  .price-box-1time-text {
+    padding: 0 4px;
+    font-size: 12px;
+  }
+  .price-box-1time-original {
+    font-size: 23px;
+  }
+  .price-box-1time-original-discount {
+    font-size: 30px;
+  }
+  .price-box-1time img {
+    height: 13px;
+  }
+}
 @media screen and (min-width: 429px) {
   .price-top {
     padding: 8.5vw 30px;
@@ -1830,6 +1923,14 @@ main {
 .flow-step01 p {
   text-align: left;
 }
+@media screen and (max-width: 375px) {
+  .flow-step01-top p {
+    font-size: 20px;
+  }
+  .flow-step01-top-text {
+    font-size: 14px;
+  }
+}
 @media screen and (min-width: 429px) {
   .flow {
     margin-top: 21.8vw;
@@ -2074,6 +2175,7 @@ main {
 
 .access {
   padding: 40px 14px;
+  text-align: center;
 }
 .access h3 {
   text-align: center;
@@ -2118,6 +2220,12 @@ main {
   font-weight: bold;
   padding-left: 10px !important;
   padding-right: 18px !important;
+}
+@media screen and (max-width: 375px) {
+  .access-img {
+    width: 292px;
+    padding: 16px 0 14px;
+  }
 }
 @media screen and (min-width: 429px) {
   .access {
@@ -2291,6 +2399,11 @@ main {
 }
 .mechanism .toggle:checked + .Label::before {
   transform: rotate(-45deg) !important;
+}
+@media screen and (max-width: 375px) {
+  .mechanism h3::before {
+    left: 5%;
+  }
 }
 @media screen and (min-width: 429px) {
   .mechanism {
@@ -2519,6 +2632,12 @@ main {
 }
 .qa .toggle:not(:checked) + .Label {
   background-color: #fff;
+}
+@media screen and (max-width: 375px) {
+  .qa-top::after {
+    width: 88px;
+    height: 60px;
+  }
 }
 @media screen and (min-width: 429px) {
   .qa-top {
