@@ -46,13 +46,14 @@ header .header-last-text {
 }
 
 footer {
-  max-width: 750px;
+  max-width: 717px;
   display: flex;
   background-color: #073160;
   color: #fff;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 15px 15px 18px;
+  padding: 16px 15px 0 18px;
+  padding-bottom: 129px;
   margin: 0 auto;
 }
 footer img {
@@ -74,6 +75,28 @@ footer .footer-right {
   font-size: 12px;
 }
 @media screen and (min-width: 429px) {
+  footer {
+    padding-bottom: 35vw;
+  }
+  footer img {
+    width: 62px;
+    height: auto;
+  }
+  footer .footer-first-text {
+    font-size: 24px;
+  }
+  footer .footer-last-text {
+    font-size: 32px;
+  }
+  footer .footer-right {
+    width: 25%;
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 750px) {
+  footer {
+    padding-bottom: 237px;
+  }
   footer img {
     width: 62px;
     height: auto;
@@ -190,6 +213,10 @@ main {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #fff;
   padding-bottom: 6px;
+}
+.mesogan-name img {
+  width: 183px;
+  vertical-align: middle;
 }
 .mesogan-text {
   position: relative;
@@ -411,33 +438,8 @@ main {
   right: 0;
   transform: rotate(35deg);
 }
-.campaign-button {
-  text-decoration: none;
-}
-.campaign-button p {
-  font-size: 20px;
-  text-align: center;
-  background-color: #F68E2F;
-  color: #fff;
-  border-radius: 50px;
-  position: relative;
-  box-shadow: 0px 0px 0px 6px #F68E2F;
-  border: solid 1px white;
-  width: 325px;
-  margin: 13px auto 24px;
-}
-.campaign-button p::after {
-  content: "";
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  background-image: url("./img/campaign-arrow.png");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: absolute;
-  right: 28px;
-  top: 30%;
+.campaign-button img {
+  width: 347px;
 }
 .campaign-footer {
   font-size: 12px;
@@ -447,7 +449,7 @@ main {
 }
 @media screen and (min-width: 429px) {
   .campaign {
-    background-size: 128vw;
+    background-size: 132vw;
     padding: 10vw 0;
   }
   .campaign-top-img {
@@ -463,17 +465,8 @@ main {
     font-size: 4.8vw;
     padding: 0 2.6vw;
   }
-  .campaign-button p {
-    font-size: 5.3vw;
-    width: 86vw;
-    border-radius: 13vw;
-    margin: 3.4vw auto 6.4vw;
-  }
-  .campaign-button p::after {
-    width: 8vw;
-    height: 8vw;
-    right: 7.4vw;
-    top: 30%;
+  .campaign-button img {
+    width: 92vw;
   }
   .campaign-footer {
     font-size: 3.2vw;
@@ -481,7 +474,7 @@ main {
 }
 @media screen and (min-width: 750px) {
   .campaign {
-    background-size: 750px;
+    background-size: 128vw;
     padding: 76px 0;
   }
   .campaign-top-img {
@@ -497,20 +490,8 @@ main {
     font-size: 36px;
     padding: 0 20px;
   }
-  .campaign-button p {
-    font-size: 40px;
-    width: 650px;
-    border-radius: 100px;
-    margin: 26px auto 48px;
-  }
-  .campaign-button p:hover {
-    box-shadow: 0px 0 0 10px #F68E2F;
-  }
-  .campaign-button p::after {
-    width: 60px;
-    height: 60px;
-    right: 56px;
-    top: 30%;
+  .campaign-button img {
+    width: 694px;
   }
   .campaign-footer {
     font-size: 24px;
@@ -938,7 +919,7 @@ main {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  background-size: 100vw;
+  background-size: 105vw;
 }
 .solution-top-box::before {
   content: "";
@@ -1229,8 +1210,10 @@ main {
   font-weight: bold;
 }
 .compare-top-bubble {
-  width: 145px;
   margin: 0 auto;
+}
+.compare-top-bubble img {
+  width: 145px;
 }
 .compare-top-ttl {
   font-size: 21px;
