@@ -339,8 +339,8 @@ main {
 
 .sticky-trigger {
   position: fixed;
-  z-index: 1;
-  bottom: 20px;
+  z-index: 10;
+  bottom: 0;
   text-align: center;
   background-color: #fff;
   margin: 0 calc(50% - 50vw);
@@ -354,6 +354,11 @@ main {
   }
 }
 
+.wrapper {
+  background: linear-gradient(30deg, #925009, #E9C865);
+  padding: 2px;
+}
+
 .campaign {
   content: "";
   display: inline-block;
@@ -363,9 +368,12 @@ main {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  background-size: 375px;
+  background-size: 125vw;
   text-align: center;
-  padding: 38px 0;
+  padding: 24px 0;
+}
+.campaign02 {
+  background-color: #fff;
 }
 .campaign-top-img {
   width: 345px;
@@ -439,7 +447,7 @@ main {
 }
 @media screen and (min-width: 429px) {
   .campaign {
-    background-size: 100vw;
+    background-size: 128vw;
     padding: 10vw 0;
   }
   .campaign-top-img {
@@ -699,7 +707,7 @@ main {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  background-size: 375px;
+  background-size: 100vw;
   padding: 40px 0 24px;
 }
 .trouble-head p {
@@ -764,7 +772,7 @@ main {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  background-size: 375px;
+  background-size: 100vw;
 }
 .trouble-main {
   width: 320px;
@@ -930,7 +938,7 @@ main {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  background-size: 390px;
+  background-size: 100vw;
 }
 .solution-top-box::before {
   content: "";
@@ -1193,8 +1201,9 @@ main {
 }
 
 .compare {
-  width: 375px;
+  width: auto;
   height: auto;
+  text-align: center;
   background-image: url("./img/compare-top.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -1233,7 +1242,7 @@ main {
   color: #335C93;
 }
 .compare-img {
-  width: 375px;
+  width: 100vw;
 }
 @media screen and (min-width: 429px) {
   .compare {
@@ -1948,7 +1957,7 @@ main {
   background-image: url("./img/details.png");
   background-size: contain;
   background-repeat: no-repeat;
-  background-size: 375px;
+  background-size: 100vw;
   padding: 60px 0 38px 0;
 }
 .details h3 {
@@ -2214,7 +2223,7 @@ main {
   padding: 56px 15px;
   background-position: top;
   background-repeat: no-repeat;
-  background-size: 375px;
+  background-size: 100vw;
 }
 .mechanism h3 {
   text-align: center;
@@ -2390,7 +2399,7 @@ main {
   background-size: contain;
   background-position: top;
   background-repeat: no-repeat;
-  background-size: 375px;
+  background-size: 100vw;
   position: relative;
 }
 .qa-top::after {
