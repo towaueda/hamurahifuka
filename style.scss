@@ -56,7 +56,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding: 16px 15px 0 18px;
-  padding-bottom: 129px;
+  padding-bottom: 84px;
   margin: 0 auto;
   & img {
     width: 31px;
@@ -77,7 +77,7 @@ footer {
     font-size: 12px;
   }
   @media screen and (min-width: 750px) {
-    padding-bottom: calc(15px + 222px);
+    padding-bottom: 185px !important;
     & img {
       width: 62px;
       height: auto;
@@ -94,7 +94,7 @@ footer {
     }
   }
   @media screen and (min-width: 429px) {
-    padding-bottom: 35vw;
+    padding-bottom: 32vw;
     & img {
       width: 8.2vw;
       height: auto;
@@ -1796,7 +1796,9 @@ main {
     }
   }
   @media screen and (max-width: 375px) {
-
+    &-img02 {
+      width: 292px;
+    }
   }
   @media screen and (min-width: 429px) {
     padding: 8.5vw 3.7vw;
@@ -2679,24 +2681,18 @@ main {
 
   &-A {
     width: 36px;
-  height: 36px;
-  border-radius: 50%; /* Make it a perfect circle */
-  background-color: #335C93; /* Background color */
-  color: #fff; /* Text color */
-  display: flex; /* Flexbox for centering */
-  justify-content: center; /* Horizontal centering */
-  align-items: center; /* Vertical centering */
-  font-size: 16px; /* Font size */
-  font-weight: bold; /* Font weight */
-  margin-right: 12px; /* Spacing between the Q and the label text */
-  flex-shrink: 0;/* 他の要素との間隔 */
-    // &-text {
-    //   font-size: 16px;
-    //   background: linear-gradient(90deg, #1274CE, #335C93);
-    //   -webkit-background-clip: text;
-    //   color: transparent;
-    //   -webkit-text-fill-color: transparent;
-    // }
+    height: 36px;
+    border-radius: 50%;
+    background-color: #335C93;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 12px;
+    flex-shrink: 0;
+    box-sizing: border-box;
   }
 
   .toggle:checked + .Label + .content {
@@ -2777,6 +2773,7 @@ main {
       p {
         width: 9.6vw;
         height: 9.6vw;
+        font-size: 2.4vw;
         margin-right: 3.2vw;
       }
     }
@@ -2786,7 +2783,6 @@ main {
       p {
         font-size: 4.2vw;
       }
-    }
     &-A {
       width: 9.6vw;
       height: 9.6vw;
@@ -2801,6 +2797,7 @@ main {
       padding: 4.2vw;
     }
   }
+}
   @media screen and (min-width: 750px) {
     &-top {
       background-size: 750px;
@@ -2838,6 +2835,7 @@ main {
       p {
         width: 72px;
         height: 72px;
+        font-size: 32px;
         margin-right: 24px;
       }
     }

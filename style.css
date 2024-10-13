@@ -53,7 +53,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding: 16px 15px 0 18px;
-  padding-bottom: 129px;
+  padding-bottom: 84px;
   margin: 0 auto;
 }
 footer img {
@@ -76,7 +76,7 @@ footer .footer-right {
 }
 @media screen and (min-width: 750px) {
   footer {
-    padding-bottom: 237px;
+    padding-bottom: 185px !important;
   }
   footer img {
     width: 62px;
@@ -95,7 +95,7 @@ footer .footer-right {
 }
 @media screen and (min-width: 429px) {
   footer {
-    padding-bottom: 35vw;
+    padding-bottom: 32vw;
   }
   footer img {
     width: 8.2vw;
@@ -1761,6 +1761,11 @@ main {
 .why-mesogan p span {
   color: #335C93;
 }
+@media screen and (max-width: 375px) {
+  .why-mesogan-img02 {
+    width: 292px;
+  }
+}
 @media screen and (min-width: 429px) {
   .why-mesogan {
     padding: 8.5vw 3.7vw;
@@ -2596,16 +2601,17 @@ main {
 .qa-A {
   width: 36px;
   height: 36px;
-  border-radius: 50%; /* Make it a perfect circle */
-  background-color: #335C93; /* Background color */
-  color: #fff; /* Text color */
-  display: flex; /* Flexbox for centering */
-  justify-content: center; /* Horizontal centering */
-  align-items: center; /* Vertical centering */
-  font-size: 16px; /* Font size */
-  font-weight: bold; /* Font weight */
-  margin-right: 12px; /* Spacing between the Q and the label text */
-  flex-shrink: 0; /* 他の要素との間隔 */
+  border-radius: 50%;
+  background-color: #335C93;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 12px;
+  flex-shrink: 0;
+  box-sizing: border-box;
 }
 .qa .toggle:checked + .Label + .content {
   height: auto;
@@ -2680,6 +2686,7 @@ main {
   .qa .Label p {
     width: 9.6vw;
     height: 9.6vw;
+    font-size: 2.4vw;
     margin-right: 3.2vw;
   }
   .qa .content {
@@ -2689,17 +2696,17 @@ main {
   .qa .content p {
     font-size: 4.2vw;
   }
-  .qa-A {
+  .qa .content-A {
     width: 9.6vw;
     height: 9.6vw;
     padding: 0 3.4vw;
     border-radius: 13vw;
     margin-right: 3.2vw;
   }
-  .qa-A-text {
+  .qa .content-A-text {
     font-size: 4.2vw;
   }
-  .qa .toggle:checked + .Label + .content { /*開閉時*/
+  .qa .content .toggle:checked + .Label + .content { /*開閉時*/
     padding: 4.2vw;
   }
 }
@@ -2741,6 +2748,7 @@ main {
   .qa .Label p {
     width: 72px;
     height: 72px;
+    font-size: 32px;
     margin-right: 24px;
   }
   .qa .content {
