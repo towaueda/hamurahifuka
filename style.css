@@ -1432,6 +1432,7 @@ main {
   text-align: center;
   margin: 0 2%;
   display: inline-block;
+  position: relative;
 }
 .price-limited-time::before {
   transform: skewX(-30deg);
@@ -1452,6 +1453,7 @@ main {
   margin: 0 2%;
   display: inline-block;
   color: #fff;
+  position: relative;
 }
 .price-special-offer::before {
   transform: skewX(-30deg);

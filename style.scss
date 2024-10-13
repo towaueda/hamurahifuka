@@ -1453,6 +1453,7 @@ main {
       text-align: center;
       margin:0 2%;
       display:inline-block;
+      position: relative;
       &::before {
         transform: skewX(-30deg);
         content: "";
@@ -1472,6 +1473,7 @@ main {
     margin:0 2%;
     display:inline-block;
     color: #fff;
+    position: relative;
     &::before {
       transform: skewX(-30deg);
       content: "";
