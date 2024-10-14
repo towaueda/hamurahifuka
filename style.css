@@ -15,6 +15,8 @@ body {
 header {
   max-width: 750px;
   color: #5F5D5D;
+  background-color: #fff;
+  font-family: "Noto Serif JP", serif;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -50,6 +52,7 @@ footer {
   display: flex;
   background-color: #073160;
   color: #fff;
+  font-family: "Noto Serif JP", serif;
   justify-content: space-between;
   align-items: center;
   padding: 16px 15px 0 18px;
@@ -114,6 +117,7 @@ footer .footer-right {
 }
 
 main {
+  background-color: #fff;
   max-width: 750px;
   width: 100%;
   margin: 0 auto;
@@ -123,13 +127,14 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: inset 0 5px #5F5D5D 0.5;
+  box-shadow: inset 0 5px rgba(95, 93, 93, 0.1);
   background: linear-gradient(90deg, #1274CE, #335C93);
   color: #fff;
 }
 .header-under p {
   font-size: 16px;
   font-weight: bold;
+  font-family: "Noto Serif JP", serif;
   position: relative;
   padding: 9px 0;
 }
@@ -322,6 +327,7 @@ main {
 }
 
 .treatment-area {
+  font-family: "Noto Serif JP", serif;
   background: linear-gradient(90deg, #1274CE, #335C93);
   padding: 16px 15px 5px 16px;
   color: #fff;
@@ -407,7 +413,7 @@ main {
 
 .wrapper {
   background: linear-gradient(45deg, #925009, #995A10, #D2A84D, #E9C865, #D3AA4E, #B78330, #A2671A, #96560D, #925009, #95540C, #9F6116, #AF7827, #C5973F, #E2BF5E, #E9C865, #E9C865, #925009);
-  padding: 2px;
+  padding: 4px;
 }
 
 .campaign {
@@ -427,10 +433,12 @@ main {
   background-color: #fff;
 }
 .campaign-top-img {
-  width: 345px;
+  max-width: 690px;
+  width: 96%;
 }
 .campaign-discount {
-  width: 284px;
+  max-width: 690px;
+  width: 78%;
 }
 .campaign-ttl {
   color: #99A9AC;
@@ -468,18 +476,13 @@ main {
 .campaign-footer {
   font-size: 12px;
   font-weight: bold;
+  font-family: "Noto Serif JP", serif;
   color: #5F5D5D;
-  padding-left: 9px;
+  padding-left: 15px;
 }
 @media screen and (max-width: 375px) {
   .campaign {
     background-size: 140vw;
-  }
-  .campaign-top-img {
-    width: 315px;
-  }
-  .campaign-discount {
-    width: 270px;
   }
   .campaign-button img {
     width: 310px;
@@ -489,12 +492,6 @@ main {
   .campaign {
     background-size: 132vw;
     padding: 10vw 0;
-  }
-  .campaign-top-img {
-    width: 92vw;
-  }
-  .campaign-discount {
-    width: 75vw;
   }
   .campaign-ttl {
     font-size: 10vw;
@@ -507,19 +504,13 @@ main {
     width: 92vw;
   }
   .campaign-footer {
-    font-size: 3.2vw;
+    font-size: 4vw;
   }
 }
 @media screen and (min-width: 750px) {
   .campaign {
     background-size: 128vw;
     padding: 76px 0;
-  }
-  .campaign-top-img {
-    width: 690px;
-  }
-  .campaign-discount {
-    width: 568px;
   }
   .campaign-ttl {
     font-size: 76px;
@@ -532,7 +523,7 @@ main {
     width: 694px;
   }
   .campaign-footer {
-    font-size: 24px;
+    font-size: 30px;
   }
 }
 
@@ -625,7 +616,9 @@ main {
 }
 .detail-Content-Title p {
   font-size: 14px;
+  font-family: "Noto Serif JP", serif;
   font-weight: bold;
+  color: #5F5D5D;
   padding: 16px;
 }
 .detail-Content-Title p span {
@@ -716,76 +709,9 @@ main {
   }
 }
 
-.trouble {
-  text-align: center;
-  background-color: #EEE;
-}
-.trouble-head {
-  color: #5F5D5D;
-  font-size: 18px;
-  content: "";
-  background-image: url("./img/trouble-head.png");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-size: 100vw;
-  padding: 40px 0 24px;
-}
-.trouble-head p {
-  text-align: center;
-}
-.trouble-head-ttl {
-  font-size: 24px;
-  font-weight: bold;
-  background-image: radial-gradient(circle at center, orange 20%, transparent 20%);
-  background-position: top right;
-  background-repeat: repeat-x;
-  background-size: 1em 0.3em;
-  padding-top: 10px;
-  position: relative;
-}
-.trouble-head-ttl::before {
-  content: "";
-  display: inline-block;
-  width: 34px;
-  height: 34px;
-  background-image: url("./img/Danger.png");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: absolute;
-  left: -35px;
-}
-.trouble-head-worries {
-  color: #335C93;
-  font-size: 24px;
-  font-weight: bold;
-  position: relative;
-}
-.trouble-head-worries::before {
-  content: "";
-  display: inline-block;
-  width: 84px;
-  height: 9px;
-  background-image: url("./img/Concerns_under.png");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: absolute;
-  bottom: 0;
-}
-.trouble-head-worries::after {
-  content: "";
-  display: inline-block;
-  width: 12px;
-  height: 15px;
-  background-image: url("./img/worries.png");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: absolute;
-  top: -10px;
-  right: 0;
+.trouble img {
+  max-width: 100vw;
+  width: 100%;
 }
 .trouble-wrapper {
   content: "";
@@ -797,6 +723,7 @@ main {
 }
 .trouble-main {
   width: 320px;
+  font-family: "Noto Serif JP", serif;
   background-color: rgba(255, 255, 255, 0.8);
   padding: 12px 12.5px;
   margin: auto;
@@ -828,6 +755,8 @@ main {
 .trouble-footer {
   font-weight: bold;
   text-align: center;
+  font-family: "Noto Serif JP", serif;
+  color: #5F5D5D;
   padding-top: 49px;
 }
 @media screen and (max-width: 375px) {
@@ -888,7 +817,7 @@ main {
   .trouble-head {
     font-size: 36px;
     background-size: 750px;
-    padding: 80px 0 48px;
+    padding: 0;
   }
   .trouble-head-ttl {
     font-size: 48px;
@@ -929,7 +858,7 @@ main {
     width: 566px;
   }
   .trouble-footer {
-    font-style: 32px;
+    font-size: 32px;
     padding-top: 98px;
   }
 }
@@ -969,8 +898,8 @@ main {
 .solution-top-box::before {
   content: "";
   /* width: 100%; */
-  border-left: 187px solid transparent;
-  border-right: 187px solid transparent;
+  border-left: 50vw solid transparent;
+  border-right: 50vw solid transparent;
   border-top: 70px solid #EEEEEE;
   position: absolute;
 }
@@ -1092,22 +1021,18 @@ main {
   color: #5F5D5D;
   text-align: center;
   font-size: 20px;
+  font-family: "Noto Serif JP", serif;
   font-weight: bold;
 }
 .solution-approve-text {
   text-align: left;
   font-size: 15px;
+  font-family: "Noto Serif JP", serif;
   text-align: justify;
 }
 @media screen and (max-width: 375px) {
   .solution-top-box {
     background-size: 134vw;
-  }
-  .solution-top-box::before {
-    content: "";
-    /* width: 100%; */
-    border-left: 160px solid transparent;
-    border-right: 160px solid transparent;
   }
 }
 @media screen and (min-width: 429px) {
@@ -1123,8 +1048,6 @@ main {
     background-size: 104VW;
   }
   .solution-top-box::before {
-    border-left: 50vw solid transparent;
-    border-right: 50vw solid transparent;
     border-top: 18vw solid #EEEEEE;
   }
   .solution-top-box-ttl {
@@ -1262,6 +1185,7 @@ main {
   bottom: -90px;
 }
 .compare-top p {
+  font-family: "Noto Serif JP", serif;
   text-align: center;
   font-weight: bold;
 }
@@ -1372,6 +1296,7 @@ main {
 .price-box h3 {
   font-size: 20px;
   font-weight: 900;
+  font-family: "Noto Serif JP", serif;
   color: #5F5D5D;
   text-align: center;
   position: relative;
@@ -1405,7 +1330,10 @@ main {
   font-size: 16px;
 }
 .price-box-number {
-  color: #335C93;
+  background: linear-gradient(90deg, #1274CE, #335C93);
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
   font-size: 44px;
 }
 .price-box-1time {
@@ -1447,7 +1375,10 @@ main {
 }
 .price-box-1time-original-discount {
   font-size: 34px;
-  color: #335C93;
+  background: linear-gradient(90deg, #1274CE, #335C93);
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
   font-family: inherit;
 }
 .price-box-1time-original-discount ruby {
@@ -1463,6 +1394,7 @@ main {
 .price-limited-price {
   display: flex;
   height: 22px;
+  gap: 8px;
   filter: drop-shadow(2px 2px 2px #4e4e4e);
 }
 .price-limited-time {
@@ -1510,7 +1442,7 @@ main {
     width: 296px;
   }
   .price-box {
-    padding: 0 12px 32px;
+    padding: 0 8px 32px;
   }
   .price-box h3::before {
     left: 20%;
@@ -1742,6 +1674,7 @@ main {
   text-align: center;
   font-size: 24px;
   font-weight: bold;
+  font-family: "Noto Serif JP", serif;
   line-height: 1.3;
   color: #5F5D5D;
   padding-top: 8px;
@@ -1753,6 +1686,7 @@ main {
 .why-mesogan p {
   font-size: 16px;
   font-weight: bold;
+  font-family: "Noto Serif JP", serif;
   text-align: left;
   text-align: justify;
   color: #5F5D5D;
@@ -1828,6 +1762,7 @@ main {
   width: 137px;
 }
 .flow-top p {
+  font-family: "Noto Serif JP", serif;
   font-size: 24px;
   text-align: center;
 }
@@ -1840,7 +1775,7 @@ main {
   -webkit-text-fill-color: transparent;
   justify-content: center;
   z-index: 5;
-  padding-top: 10px;
+  padding-top: 14px;
 }
 .flow-step::before {
   content: "簡単";
@@ -1852,10 +1787,11 @@ main {
   font-size: 18px;
   position: absolute;
   left: 17%;
-  top: 42%;
+  top: 47%;
 }
 .flow-step-number {
   font-size: 67px;
+  font-family: "Noto Serif JP", serif;
   font-style: italic;
   background: linear-gradient(90deg, #1274CE, #335C93);
   -webkit-background-clip: text;
@@ -1873,7 +1809,7 @@ main {
 .flow-step-number::before {
   position: absolute;
   left: 74px;
-  top: 33px;
+  top: 39px;
   content: "";
   width: 1px;
   height: 30%;
@@ -1885,7 +1821,7 @@ main {
   position: absolute;
   content: "";
   left: 74px;
-  top: 80px;
+  top: 92px;
   width: 1px;
   height: 30%;
   background: linear-gradient(90deg, #1274CE, #335C93);
@@ -1913,6 +1849,7 @@ main {
 .flow-step01-top rt {
   font-size: 10px;
   letter-spacing: -0.5px;
+  font-style: normal;
 }
 .flow-step01-top p {
   background: linear-gradient(90deg, #1274CE, #335C93);
@@ -1926,6 +1863,7 @@ main {
   font-size: 16px;
 }
 .flow-step01 p {
+  font-family: "Noto Serif JP", serif;
   text-align: left;
 }
 @media screen and (max-width: 375px) {
@@ -2045,6 +1983,7 @@ main {
 }
 
 .details {
+  font-family: "Noto Serif JP", serif;
   background-image: url("./img/details.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -2179,6 +2118,7 @@ main {
 }
 
 .access {
+  font-family: "Noto Serif JP", serif;
   padding: 40px 14px;
   text-align: center;
 }
@@ -2225,6 +2165,11 @@ main {
   font-weight: bold;
   padding-left: 10px !important;
   padding-right: 18px !important;
+}
+.access small {
+  display: flex;
+  text-align: left;
+  padding-left: 160x;
 }
 @media screen and (max-width: 375px) {
   .access-img {
@@ -2316,12 +2261,13 @@ main {
 }
 
 .mechanism {
+  font-family: "Noto Serif JP", serif;
   background-image: url("./img/mechanism-bg.png");
   background-size: contain;
-  padding: 56px 15px;
   background-position: top;
   background-repeat: no-repeat;
   background-size: 100vw;
+  padding: 56px 15px;
 }
 .mechanism h3 {
   text-align: center;
@@ -2522,17 +2468,21 @@ main {
   color: #fff;
   font-size: 40px;
   text-align: center;
+  font-style: italic;
+  letter-spacing: 4px;
 }
 .qa-logo span {
   font-size: 22px;
 }
 .qa-ttl {
+  font-family: "Noto Serif JP", serif;
   color: #fff;
   text-align: center;
   font-size: 26px;
   padding-bottom: 20px;
 }
 .qa .qa-box {
+  font-family: "Noto Serif JP", serif;
   padding: 32px 16px;
 }
 .qa .toggle {
