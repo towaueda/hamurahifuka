@@ -6,8 +6,8 @@ body {
 @media screen and (min-width: 429px) {
   body {
     background-image: url(./img/mesogan-pc-bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: repeat-y;
   }
 }
 
