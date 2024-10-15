@@ -1311,7 +1311,7 @@ main {
       background: linear-gradient(90deg, #1274CE, #335C93);
     }
   }
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 374px) {
     &-box-img {
       width: 296px;
     }
@@ -1555,7 +1555,12 @@ main {
   text-align: center;
   padding: 32px 14px;
   &-img01 {
-    width: 250px;
+    max-width: 750px;
+    width: 73%;
+  }
+  &-img02 {
+    max-width: 750px;
+    width: 100%;
   }
   h3 {
     text-align: center;
@@ -1583,18 +1588,18 @@ main {
     }
   }
   @media screen and (max-width: 375px) {
-    &-img02 {
-      width: 292px;
-    }
+    // &-img02 {
+    //   width: 292px;
+    // }
   }
   @media screen and (min-width: 429px) {
     padding: 8.5vw 3.7vw;
-    &-img01 {
-      width: 66.8vw;
-    }
-    &-img02 {
-      width: 92vw;
-    }
+    // &-img01 {
+    //   width: 66.8vw;
+    // }
+    // &-img02 {
+    //   width: 92vw;
+    // }
     h3 {
       font-size: 6.4vw;
       padding-top: 2vw;
@@ -1607,12 +1612,12 @@ main {
   }
   @media screen and (min-width: 750px) {
     padding: 64px 28px;
-    &-img01 {
-      width: 501px;
-    }
-    &-img02 {
-      width: 690px;
-    }
+    // &-img01 {
+    //   width: 501px;
+    // }
+    // &-img02 {
+    //   width: 690px;
+    // }
     h3 {
       font-size: 48px;
       padding-top: 16px;
@@ -2371,7 +2376,7 @@ main {
 .qa {
   &-top {
     background-image: url('./img/qa-top-bg.png');
-    background-size: contain;
+    background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
     // background-size: 100vw;

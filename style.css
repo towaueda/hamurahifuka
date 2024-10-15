@@ -1277,7 +1277,7 @@ main {
   z-index: -1;
   background: linear-gradient(90deg, #1274CE, #335C93);
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 374px) {
   .price-box-img {
     width: 296px;
   }
@@ -1506,7 +1506,12 @@ main {
   padding: 32px 14px;
 }
 .why-mesogan-img01 {
-  width: 250px;
+  max-width: 750px;
+  width: 73%;
+}
+.why-mesogan-img02 {
+  max-width: 750px;
+  width: 100%;
 }
 .why-mesogan h3 {
   text-align: center;
@@ -1533,20 +1538,9 @@ main {
 .why-mesogan p span {
   color: #335C93;
 }
-@media screen and (max-width: 375px) {
-  .why-mesogan-img02 {
-    width: 292px;
-  }
-}
 @media screen and (min-width: 429px) {
   .why-mesogan {
     padding: 8.5vw 3.7vw;
-  }
-  .why-mesogan-img01 {
-    width: 66.8vw;
-  }
-  .why-mesogan-img02 {
-    width: 92vw;
   }
   .why-mesogan h3 {
     font-size: 6.4vw;
@@ -1561,12 +1555,6 @@ main {
 @media screen and (min-width: 750px) {
   .why-mesogan {
     padding: 64px 28px;
-  }
-  .why-mesogan-img01 {
-    width: 501px;
-  }
-  .why-mesogan-img02 {
-    width: 690px;
   }
   .why-mesogan h3 {
     font-size: 48px;
@@ -2275,7 +2263,7 @@ main {
 
 .qa-top {
   background-image: url("./img/qa-top-bg.png");
-  background-size: contain;
+  background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
   position: relative;
