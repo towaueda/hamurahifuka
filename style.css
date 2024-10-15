@@ -6,9 +6,8 @@ body {
 @media screen and (min-width: 429px) {
   body {
     background-image: url(./img/mesogan-pc-bg.jpg);
-    background-size: contain;
     background-repeat: no-repeat;
-    background-size: 100vw;
+    background-size: cover;
   }
 }
 
@@ -98,7 +97,7 @@ footer .footer-right {
 }
 @media screen and (min-width: 429px) {
   footer {
-    padding-bottom: 32vw;
+    padding-bottom: 26vw;
   }
   footer img {
     width: 8.2vw;
@@ -108,7 +107,7 @@ footer .footer-right {
     font-size: 3.2vw;
   }
   footer .footer-last-text {
-    font-size: 4.2vw;
+    font-size: 4vw;
   }
   footer .footer-right {
     width: 25%;
@@ -200,8 +199,7 @@ main {
   height: 100%;
   background-image: url("./img/mesogan-bg.jpg");
   background-position: center;
-  background-size: contain;
-  background-size: 750px;
+  background-size: cover;
 }
 .mesogan-left {
   width: 50%;
@@ -425,7 +423,6 @@ main {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  background-size: 125vw;
   text-align: center;
   padding: 24px 0;
 }
@@ -482,7 +479,7 @@ main {
 }
 @media screen and (max-width: 375px) {
   .campaign {
-    background-size: 140vw;
+    background-size: cover;
   }
   .campaign-button img {
     width: 310px;
@@ -490,7 +487,7 @@ main {
 }
 @media screen and (min-width: 429px) {
   .campaign {
-    background-size: 132vw;
+    background-size: cover;
     padding: 10vw 0;
   }
   .campaign-ttl {
@@ -504,12 +501,13 @@ main {
     width: 92vw;
   }
   .campaign-footer {
-    font-size: 4vw;
+    font-size: 3.2vw;
+    padding-left: 4vw;
   }
 }
 @media screen and (min-width: 750px) {
   .campaign {
-    background-size: 128vw;
+    background-size: cover;
     padding: 76px 0;
   }
   .campaign-ttl {
@@ -523,7 +521,8 @@ main {
     width: 694px;
   }
   .campaign-footer {
-    font-size: 30px;
+    font-size: 24px;
+    padding-left: 30px;
   }
 }
 
@@ -713,155 +712,6 @@ main {
   max-width: 100vw;
   width: 100%;
 }
-.trouble-wrapper {
-  content: "";
-  background-image: url("./img/trouble-wrapper.png");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-size: 100vw;
-}
-.trouble-main {
-  width: 320px;
-  font-family: "Noto Serif JP", serif;
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 12px 12.5px;
-  margin: auto;
-}
-.trouble-main p {
-  text-align: left;
-  font-weight: bold;
-  padding: 12px 0;
-  position: relative;
-  padding-left: 40px;
-}
-.trouble-main p span {
-  font-weight: bold;
-  color: #F68E2F;
-}
-.trouble-main p::before {
-  content: "";
-  display: inline-block;
-  width: 28px;
-  height: 28px;
-  background-image: url("./img/Checkbox.png");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 0;
-  top: 30%;
-}
-.trouble-footer {
-  font-weight: bold;
-  text-align: center;
-  font-family: "Noto Serif JP", serif;
-  color: #5F5D5D;
-  padding-top: 49px;
-}
-@media screen and (max-width: 375px) {
-  .trouble-main {
-    width: 295px;
-  }
-}
-@media screen and (min-width: 429px) {
-  .trouble-head {
-    font-size: 4.8vw;
-    background-size: 100vw;
-    padding: 10vw 0 6.4vw;
-  }
-  .trouble-head-ttl {
-    font-size: 6.4vw;
-    background-size: 1em 0.3em;
-    padding-top: 2.6vw;
-  }
-  .trouble-head-ttl::before {
-    background-size: 9vw;
-    width: 6.4vw;
-    height: 6.4vw;
-    left: -9.3vw;
-  }
-  .trouble-head-worries {
-    font-size: 6.4vw;
-  }
-  .trouble-head-worries::before {
-    width: 22vw;
-    height: 2.4vw;
-  }
-  .trouble-wrapper {
-    background-size: 100vw;
-  }
-  .trouble-main {
-    width: 85vw;
-    padding: 3.2vw;
-  }
-  .trouble-main p {
-    font-size: 4.6vw;
-    padding: 3.2vw 0;
-    padding-left: 10vw;
-  }
-  .trouble-main p::before {
-    width: 7.4vw;
-    height: 7.4vw;
-    top: 30%;
-  }
-  .trouble-img {
-    width: 75vw;
-  }
-  .trouble-footer {
-    font-size: 4.2vw;
-    padding-top: 13vw;
-  }
-}
-@media screen and (min-width: 750px) {
-  .trouble-head {
-    font-size: 36px;
-    background-size: 750px;
-    padding: 0;
-  }
-  .trouble-head-ttl {
-    font-size: 48px;
-    background-size: 1em 0.3em;
-    padding-top: 20px;
-  }
-  .trouble-head-ttl::before {
-    background-size: 68px;
-    width: 68px;
-    height: 68px;
-    left: -70px;
-  }
-  .trouble-head-worries {
-    font-size: 48px;
-  }
-  .trouble-head-worries::before {
-    width: 168px;
-    height: 18px;
-  }
-  .trouble-wrapper {
-    background-size: 750px;
-  }
-  .trouble-main {
-    width: 640px;
-    padding: 24px 25px;
-  }
-  .trouble-main p {
-    font-size: 32px;
-    padding: 24px 0;
-    padding-left: 80px;
-  }
-  .trouble-main p::before {
-    width: 56px;
-    height: 56px;
-    top: 30%;
-  }
-  .trouble-img {
-    width: 566px;
-  }
-  .trouble-footer {
-    font-size: 32px;
-    padding-top: 98px;
-  }
-}
 
 .solution {
   overflow-x: hidden;
@@ -891,9 +741,8 @@ main {
 .solution-top-box {
   background-image: url("./img/Solution.png");
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-size: 105vw;
 }
 .solution-top-box::before {
   content: "";
@@ -969,7 +818,8 @@ main {
   -webkit-text-stroke-color: #fff;
 }
 .solution-approve {
-  max-width: 345px;
+  max-width: 950px;
+  width: 95%;
   padding-bottom: 24px;
   margin: 0 auto;
   position: relative;
@@ -1015,6 +865,8 @@ main {
   -webkit-text-fill-color: transparent;
 }
 .solution-approve img {
+  max-width: 750px;
+  width: 100%;
   padding: 16px 0;
 }
 .solution-approve-ttl {
@@ -1030,11 +882,6 @@ main {
   font-family: "Noto Serif JP", serif;
   text-align: justify;
 }
-@media screen and (max-width: 375px) {
-  .solution-top-box {
-    background-size: 134vw;
-  }
-}
 @media screen and (min-width: 429px) {
   .solution-top {
     font-size: 6.1vw;
@@ -1043,9 +890,6 @@ main {
   }
   .solution-top::before {
     margin-left: -0.6vw;
-  }
-  .solution-top-box {
-    background-size: 104VW;
   }
   .solution-top-box::before {
     border-top: 18vw solid #EEEEEE;
@@ -1104,9 +948,6 @@ main {
   }
   .solution-top::before {
     margin-left: -5px;
-  }
-  .solution-top-box {
-    background-size: 785px;
   }
   .solution-top-box::before {
     border-left: 374px solid transparent;
@@ -1311,7 +1152,6 @@ main {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  background-size: 180px;
   position: absolute;
   left: 24%;
   top: 9px;
@@ -1502,7 +1342,6 @@ main {
     width: 48vw;
     height: 12vw;
     left: 24%;
-    background-size: 48vw;
   }
   .price-box01 img {
     height: 3.4vw;
@@ -1596,7 +1435,6 @@ main {
     height: 85px;
     left: 26%;
     top: 22px;
-    background-size: 360px;
   }
   .price-box01 img {
     height: 26px;
@@ -1887,6 +1725,9 @@ main {
   .flow-top-img {
     width: 32vw;
   }
+  .flow-top p {
+    font-size: 6.4vw;
+  }
   .flow-step::before {
     font-size: 4.8vw;
   }
@@ -1985,9 +1826,8 @@ main {
 .details {
   font-family: "Noto Serif JP", serif;
   background-image: url("./img/details.png");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-size: 100vw;
   padding: 60px 0 38px 0;
 }
 .details h3 {
@@ -2064,7 +1904,6 @@ main {
 }
 @media screen and (min-width: 429px) {
   .details {
-    background-size: 100vw;
     padding: 10vw 0;
   }
   .details h3 {
@@ -2091,7 +1930,6 @@ main {
 }
 @media screen and (min-width: 750px) {
   .details {
-    background-size: 750px;
     padding: 76px 0;
   }
   .details h3 {
@@ -2135,6 +1973,10 @@ main {
   font-size: 16px;
   text-align: left;
 }
+.access-img {
+  max-width: 750px;
+  width: 100%;
+}
 .access-ttl {
   background-color: #ECF1F8;
   font-size: 16px;
@@ -2173,16 +2015,12 @@ main {
 }
 @media screen and (max-width: 375px) {
   .access-img {
-    width: 292px;
     padding: 16px 0 14px;
   }
 }
 @media screen and (min-width: 429px) {
   .access {
     padding: 10vw 3.7vw;
-  }
-  .access-img {
-    width: 92vw;
   }
   .access h3 {
     font-size: 6.4vw;
@@ -2221,9 +2059,6 @@ main {
 @media screen and (min-width: 750px) {
   .access {
     padding: 80px 28px;
-  }
-  .access-img {
-    width: 690px;
   }
   .access h3 {
     font-size: 48px;
@@ -2266,7 +2101,6 @@ main {
   background-size: contain;
   background-position: top;
   background-repeat: no-repeat;
-  background-size: 100vw;
   padding: 56px 15px;
 }
 .mechanism h3 {
@@ -2359,7 +2193,6 @@ main {
 @media screen and (min-width: 429px) {
   .mechanism {
     padding: 15vw 4vw;
-    background-size: 100vw;
   }
   .mechanism h3 {
     font-size: 5.8vw;
@@ -2369,7 +2202,6 @@ main {
     height: 20vw;
     top: -8vw;
     left: 13%;
-    background-size: 70vw;
   }
   .mechanism-box {
     padding-top: 10vw;
@@ -2400,7 +2232,6 @@ main {
 @media screen and (min-width: 750px) {
   .mechanism {
     padding: 112px 30px;
-    background-size: 750px;
   }
   .mechanism h3 {
     font-size: 44px;
@@ -2410,7 +2241,6 @@ main {
     height: 152px;
     top: -60px;
     left: 13%;
-    background-size: 526px;
   }
   .mechanism-box {
     padding-top: 80px;
@@ -2448,7 +2278,6 @@ main {
   background-size: contain;
   background-position: top;
   background-repeat: no-repeat;
-  background-size: 100vw;
   position: relative;
 }
 .qa-top::after {
@@ -2459,7 +2288,7 @@ main {
   background-image: url("./img/qa-gun.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 104px;
+  background-size: cover;
   position: absolute;
   bottom: -25px;
   right: 0;
@@ -2597,13 +2426,13 @@ main {
 }
 @media screen and (min-width: 429px) {
   .qa-top {
-    background-size: 100vw;
+    background-size: cover;
   }
   .qa-top::after {
     width: 27vw;
     height: 20vw;
     bottom: -6.6vw;
-    background-size: 27vw;
+    background-size: cover;
   }
   .qa-logo {
     font-size: 10vw;
@@ -2662,13 +2491,12 @@ main {
 }
 @media screen and (min-width: 750px) {
   .qa-top {
-    background-size: 750px;
+    background-size: cover;
   }
   .qa-top::after {
     width: 208px;
     height: 150px;
     bottom: -50px;
-    background-size: 208px;
   }
   .qa-logo {
     font-size: 80px;
