@@ -60,7 +60,7 @@ footer {
 }
 footer img {
   width: 31px;
-  height: 31px;
+  /* height: 31px; */
 }
 footer .footer-left {
   display: flex;
@@ -83,16 +83,20 @@ footer .footer-right {
   footer img {
     width: 8.2vw;
     height: auto;
+    width: clamp(31px , 8.2vw , 62px);
   }
   footer .footer-first-text {
     font-size: 3.2vw;
+    font-size: clamp(12px , 3.2vw , 24px);
   }
   footer .footer-last-text {
     font-size: 4vw;
+    font-size: clamp(16px , 4vw , 32px);
   }
   footer .footer-right {
     width: 25%;
     font-size: 3.2vw;
+    font-size: clamp(12px , 3.2vw , 24px);
   }
 }
 @media screen and (min-width: 750px) {
