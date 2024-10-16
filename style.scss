@@ -192,6 +192,18 @@ main {
   }
 }
 
+.animation{
+  animation: dokundokun 1300ms ease infinite;
+}
+
+@keyframes dokundokun {
+  0%  { transform: scale(1); }
+  15% { transform: scale(1.2); }
+  30% { transform: scale(1); }
+  45% { transform: scale(1.2); }
+  70% { transform: scale(1); }
+}
+
 // mesogan
 .mesogan {
   content: "";
@@ -415,7 +427,7 @@ main {
   height: auto;
   background-image: url('./img/campaign-bg.png');
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
   padding: 24px 0;
@@ -462,7 +474,7 @@ main {
   }
   &-button {
     img {
-      width: 347px;
+      width: 300px;
     }
   }
   &-footer {
@@ -476,7 +488,7 @@ main {
     background-size: cover;
     &-button {
       img {
-        width: 310px;
+        width: 250px;
       }
     }
   }
@@ -492,7 +504,7 @@ main {
     }
     &-button {
       img {
-        width: 92vw;
+        width: 80vw;
       }
     }
     &-footer {
@@ -512,7 +524,7 @@ main {
     }
     &-button {
       img {
-        width: 694px;
+        width: 500px;
       }    }
     &-footer {
       font-size: 24px;
