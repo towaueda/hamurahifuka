@@ -249,6 +249,7 @@ main {
 }
 .mesogan-text {
   position: relative;
+  font-size: 16px;
 }
 .mesogan-text::after, .mesogan-text::before {
   content: "";
@@ -275,13 +276,14 @@ main {
   height: auto;
   right: 0;
   bottom: 0;
+  max-width: max-content;
 }
 @media screen and (max-width: 375px) {
   .mesogan-name img {
     width: 160px;
   }
   .mesogan-text {
-    font-size: 12px;
+    font-size: calc(16 * 100vw / 375);
   }
 }
 @media screen and (min-width: 429px) {
@@ -576,6 +578,7 @@ main {
   position: absolute;
   left: -24px;
   top: -20px;
+  width: 35%;
 }
 .detail-Content {
   position: relative;
@@ -1183,6 +1186,7 @@ main {
 .price-box-off {
   color: #5F5D5D;
   font-size: 16px;
+  white-space: nowrap;
 }
 .price-box-number {
   background: linear-gradient(90deg, #1274CE, #335C93);
