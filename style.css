@@ -21,6 +21,8 @@ header {
   align-items: center;
   padding: 14px 0 14px 16px;
   margin: 0 auto;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  position: relative;
 }
 header img {
   width: auto;
@@ -126,7 +128,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: inset 0 5px rgba(95, 93, 93, 0.1);
+  /* box-shadow: inset 0 5px rgba(95, 93, 93, 0.1); */
   background: linear-gradient(90deg, #1274CE, #335C93);
   color: #fff;
 }
