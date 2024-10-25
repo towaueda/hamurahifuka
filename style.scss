@@ -23,6 +23,8 @@ header {
   align-items: center;
   padding: 14px 0 14px 16px;
   margin: 0 auto;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  position: relative;
   & img {
     width: auto;
     height: 100%;
@@ -221,7 +223,8 @@ main {
     color: #5F5D5D;
     font-size:clamp(26px, 5vw ,54px) !important;
     font-weight: bold;
-    line-height: 1.3;
+    line-height: 1.3 !important;
+    letter-spacing: 0.04em !important;
   }
   &-name {
     font-weight: bold;
@@ -265,6 +268,7 @@ main {
       height: auto;
       right: 0;
       bottom: 0;
+      max-width: max-content;
     }
   }
   @media screen and (max-width: 375px) {
@@ -430,7 +434,7 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
-  padding: 24px 0;
+  padding: 20px 0;
   &02 {
     background-color: #fff;
   }
@@ -567,6 +571,7 @@ main {
       position: absolute;
       left: -24px;
       top: -20px;
+      width: 35%;
     }
   }
   &-Content {
@@ -1209,6 +1214,7 @@ main {
     &-off {
       color: #5F5D5D;
       font-size: 16px;
+      white-space: nowrap;
     }
     &-number {
       background: linear-gradient(90deg, #1274CE, #335C93);
@@ -1757,6 +1763,7 @@ main {
       }
       &-text {
         font-size: 16px;
+        line-height: 1.5;
       }
     }
     p {
@@ -1994,11 +2001,16 @@ main {
       font-size: 16px;
       text-align: left;
       padding: 4px 0 4px 30px;
+      color: #5F5D5D;
+      font-weight: bold;
+      &-content-ttl {
+        font-weight: 900;
+      }
+      &-content-text{
+        font-size: 14px;
+        padding-left: 27px;
+      }
     }
-  }
-  &-content-text {
-    font-size: 14px;
-    padding-left: 27px;
   }
   @media screen and (max-width: 375px) {
 
@@ -2230,11 +2242,14 @@ main {
   }
   .Label {
     padding: 1em;
+    padding-right: 1.5em;
     display: block;
     color: #335C93;
     box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .5);
     background:#fff;
     background-image: linear-gradient(135deg, #335C93 10px, transparent 0);
+    font-size: clamp(18px , 3vw , 24px);
+
   }
   .Label::before{		/*タイトル横の矢印*/
     content:"";
@@ -2256,7 +2271,8 @@ main {
     transition: all 0.3s;
   }
   .Label span{
-   font-size: 25px;
+  //  font-size: 25px;
+    font-size: clamp(25px , 4vw , 30px);
   }
   .content {		/*本文*/
     height: 0;
@@ -2311,7 +2327,7 @@ main {
       padding-top: 10vw;
     }
     .Label {
-      font-size: 4.8vw;
+      // font-size: 4.8vw;
       padding: 1em;
       background-image: linear-gradient(135deg, #335C93 2.6vw, transparent 0);
     }
@@ -2350,7 +2366,7 @@ main {
       padding-top: 80px;
     }
     .Label {
-      font-size: 36px;
+      // font-size: 36px;
       padding: 1em;
       background-image: linear-gradient(135deg, #335C93 20px, transparent 0);
     }

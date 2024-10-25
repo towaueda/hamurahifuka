@@ -74,6 +74,7 @@ main.lp-content__inner {
   max-width: 750px;
   margin-left: auto;
   margin-right: auto;
+  overflow-x: hidden;
 }
 .post_content h2:where(:not([class^="swell-block-"]):not(.faq_q):not(.p-postList__title)) {
   padding:0;
