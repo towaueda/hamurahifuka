@@ -23,6 +23,7 @@ header {
   margin: 0 auto;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   position: relative;
+  box-sizing: border-box;
 }
 header img {
   width: auto;
@@ -2572,5 +2573,72 @@ h2.mesogan-ttl {
   }
   .qa .toggle:checked + .Label + .content { /*開閉時*/
     padding: 32px;
+  }
+}
+
+.exitPopup {
+  display: none; 
+  opacity: 0; 
+  transition: opacity 0.5s ease; 
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 12;
+  width: 100vw;
+  height: 100%;
+}
+.exitPopup__mask {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: -1;
+}
+.exitPopup__image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  max-width: calc(300 / 375 * 100vw);
+  width: 100%;
+}
+.exitPopup img {
+  width: 100%;
+  display: block;
+}
+.exitPopup__close {
+  position: absolute;
+  bottom: 102%;
+  right: 0;
+  display: block;
+  width: 8%;
+  height: 8%;
+  border-radius: 50%;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  background: #fff;
+  opacity: 0.5;
+}
+.exitPopup__close::before,
+.exitPopup__close::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  width: 60%;
+  height: 3px;
+  background: rgba(0, 0, 0, 0.5);
+}
+.exitPopup__close::before {
+  transform: translate(-50%,-50%) rotate(45deg);
+}
+.exitPopup__close::after {
+  transform: translate(-50%,-50%) rotate(-45deg);
+}
+@media screen and (min-width:750px) {
+  .exitPopup__image {
+    max-width: 700px;
   }
 }/*# sourceMappingURL=style.css.map */
